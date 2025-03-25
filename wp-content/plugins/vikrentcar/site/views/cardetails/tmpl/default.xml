@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRENTCAR_CARDETAILS_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRENTCAR_CARDETAILS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Car Details" >
+		<message><![CDATA[VikRentCar Car Details]]></message>
+	</view>
+	<state>
+		<name>Car Details</name>
+		<description>VikRentCar Car Details</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="carid" type="sql" label="COM_VIKRENTCAR_CARID_FIELD_SELECT_TITLE" query="SELECT `id`, `name` FROM `#__vikrentcar_cars` ORDER BY `name` ASC" key_field="id" value_field="name" required="true" />
+		</fieldset>
+	</fields>
+</metadata>

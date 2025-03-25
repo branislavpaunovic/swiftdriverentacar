@@ -1,0 +1,581 @@
+.vrcdivsearchmodule {
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border:0;
+	padding: 15px;
+}
+.vrcdivsearch .vrcsfentrycont select, 
+.vrcdivsearch .vrcsfentrycont input {
+	font-size: 16px;
+}
+.vrcdivsearchmodule .vrcsfentrycont .vrcsfentrydate .hasDatepicker {
+	border-radius: 0;
+	padding: 0;
+	height: 37px;
+	float: left;
+	margin: 0 10px 0 0;
+	border: 0;
+	box-shadow: none;
+	flex: 1;
+	background: #fff;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentrycont .vrcsfentrydate .ui-datepicker-trigger {
+	display: none;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentryselect select {
+    padding: 12px 1.75rem 12px .75rem;
+    font-size: .8em !important;
+    line-height: 1;
+    border:0; 
+    border-radius: 2px;
+    height: 39.2px;
+    width: 100%;
+    margin-bottom: 0;
+    border: 1px solid #ddd;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodselph, 
+.vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodselpm,
+.vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodseldh, 
+.vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodseldm {
+	display: inline-block;
+   float: left;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentrycont .vrctimesep {
+	display: inline-block;
+	padding: 5px;
+	float: left;
+}
+.vrcdivsearch .vrcsfentrycont label {
+	display: inline-block;
+	margin: 0 5px 5px 0;
+	width: 100%;
+}
+.vrcdivsearch .vrcsfentrycont .vrcsfentrylabsel {
+	float: left;
+	min-width: 200px;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentrycont .vrcsfentrytime {
+	float: left;
+	width: 50%;
+	/** @wponly **/
+	margin: 0 0 0 21px;
+}
+.vrcdivsearch .vrcsfentrylabsel label {
+	display: block;
+}
+.vrcdivsearch .vrcsfentrylabsel .vrcsfentrydate {
+	background: #fff;
+	padding: 0 10px;
+	color: #666;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+	display: flex;
+}
+.vrcdivsearch .vrcsfentrylabsel .vrcsfentrydate i {
+	margin-top: 12px;
+	font-size: .8em;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentrycont div {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 100%;
+}
+.vrcdivsearchmodule .vrcsfentrysubmit {
+	width: 100%;
+}
+.vrc-searchmod-wrap-vertical .vrc-searchmod-section-sbmt .vrcsearch {
+	width: 100%;
+	margin-top: 10px;
+}
+.vrcdivsearchmodule select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none !important;
+	background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center !important;
+	background-size: 10px 12px !important;
+}
+.vrc-searchmod-wrap-horizontal > form {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+.vrc-searchmod-wrap-horizontal > form > div {
+	flex: initial;
+}
+.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-pickup {
+	display: flex;
+	flex-wrap: nowrap;
+	max-width: inherit
+	max-width: 200px;
+	margin-right: 10px;
+}
+.vrc-searchmod-wrap-horizontal form .vrcsfentrycont {
+	vertical-align: top;
+	width: auto;
+	min-width: inherit;
+	margin: 3px 10px 3px 0;
+	align-self: end;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-pickup .vrcsfentrycont {
+    margin-right: 0;
+}
+.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-datetimes .vrcsfentrycont {
+	display: flex;
+	width: 100%;
+}
+.vrc-searchmod-wrap-horizontal .vrcsfentrycont .vrcsfentrylabsel {
+	min-width: 120px;
+	margin-right: 10px;
+}
+.vrc-searchmod-wrap-horizontal .vrcsfentrycont > div > label, .vrc-searchmod-wrap-horizontal .vrcsfentrycont > label {
+    display: block;
+    float: none;
+    width: auto;
+    font-weight: normal;
+    font-size: .9em;
+}
+.vrc-searchmod-wrap-horizontal .vrcsfentrycont > div {
+    width: 100%;
+    align-self: flex-start;
+}
+.vrc-searchmod-wrap-horizontal form .vrcsfentrycont:first-child .vrcsfentryselect {
+    border-right: 1px solid #eee;
+}
+.vrc-searchmod-wrap-horizontal form .vrcsfentrycont select {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    height: 41px !important;
+    padding: 10px 1.75rem 10px .75rem !important;
+}
+.vrc-searchmod-wrap-horizontal form .vrcsfentrycont:first-child .vrcsfentryselect select {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.vrc-searchmod-wrap-horizontal form .vrcsfentrycont:last-child .vrcsfentryselect select {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes {
+    display: flex;
+    margin-right: 10px;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont {
+    margin-right: 0;
+    display: flex;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont:first-child {
+    margin-right: 10px;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrylabsel {
+    margin-right: 0;
+}
+.vrc-searchmod-wrap-horizontal .vrcsfentrycont .vrcsfentrylabsel {
+    width: auto;
+}
+.vrc-searchmod-wrap-horizontal .vrcsfentrylabsel .vrcsfentrydate {
+    padding: 0 15px;
+    border-radius: 0;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrylabsel .vrcsfentrydate {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrylabsel .vrcsfentrydate input {
+    height: 39.2px;
+    background: transparent;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrylabsel .vrcsfentrydate i {
+    font-size: .9em;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrytime {
+    margin-left: 0;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrytime .vrc-sf-time-container {
+	display: flex;
+}
+.vrc-searchmod-wrap-horizontal form .vrc-searchmod-section-sbmt {
+    align-self: flex-end;
+}
+.vrc-searchmod-wrap-horizontal.vrcsfentrysubmit .vrcsearch {
+    font-size: 14px;
+    font-weight: 400;
+    width: auto;
+    border-radius: 2px;
+	cursor: pointer;
+	padding: 10px 15px;
+}
+.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-categories {
+	flex: inherit;	
+}
+.vrc-searchmod-wrap-horizontal .vrcsfentrycont .vrcsfentrytime {
+	width: auto;
+}
+.vrc-searchmod-wrap-horizontal .vrcsfentrysubmit .vrcsearch {
+	width: auto;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentrycont div {
+	display: block;
+}
+.vrc-searchmod-wrap-vertical > form > div .vrcsfentrycont {
+	margin: 5px 0;
+}
+.vrc-searchmod-wrap-vertical .vrc-searchmod-section-datetimes {
+	display: inline-block;
+	width: 100%;
+}
+.vrc-searchmod-wrap-vertical .vrc-searchmod-section-datetimes .vrcsfentrycont {
+	display: flex;
+	width: 100%;
+}
+.vrc-searchmod-wrap-vertical > form .vrc-searchmod-section-datetimes .vrcsfentrylabsel {
+	flex: 1;
+	min-width: auto;
+}
+.vrc-searchmod-wrap-vertical.vrcsfentrycont .vrcsfentrytime {
+    margin: 0 0 0 10px;
+    width: auto;
+}
+.vrc-searchmod-wrap-vertical .vrc-searchmod-section-sbmt {
+	margin-top: 10px;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentrycont .vrcsfentrytime {
+	margin: 0 0 0 10px;
+	width: auto;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodselph select, .vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodselpm select, .vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodseldh select, .vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodseldm select {
+	padding: 12px 1.75rem 12px .75rem;
+    font-size: .8em !important;
+    line-height: 1;
+    border: 1px solid #ddd; 
+    border-radius: 2px;
+    height: 39.2px;
+    width: 100%;
+    margin-bottom: 0;
+}
+.vrc-searchmod-wrap-vertical .vrcsfentrysubmit .vrcsearch {
+	width: 100%;
+}
+
+/* Hybrid Layout */
+.vrc-searchmod-wrap-hybrid > form {
+	padding: 15px;
+	background: #f6f6f6;
+	border: 1px solid #ddd;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-searchmod-wrap-hybrid .vrcdivsearch .vrcsfentrycont {
+	margin: 0 0 10px 0;
+	flex: 1;
+}
+.vrc-searchmod-wrap-hybrid .vrcsfentryselect select {
+    padding: 12px 1.75rem 12px .75rem;
+    font-size: .8em !important;
+    line-height: 1;
+    border:0; 
+    border-radius: 2px;
+    height: 39.2px;
+    width: 100%;
+    margin-bottom: 0;
+    border: 1px solid #ddd;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-pickup {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-pickup .vrcsfentrycont {
+	margin: 0 0 10px 0;
+  	flex: 1;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-pickup .vrcsfentrycont:first-child, .vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrcsfentrycont:first-child {
+	margin-right: 10px;
+}
+.vrc-searchmod-wrap-hybrid .vrcsfentrycont label {
+	display: block;
+	margin: 0;
+	font-size: .9em;
+  	font-weight: normal;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrc-sf-time-container {
+	display: flex;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrc-sf-time-container span:not(.vrctimesep) {
+	flex: 1;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrc-sf-time-container .vrctimesep {
+	display: inline-block;
+	padding: 0 5px;
+	align-self: center;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrc-sf-time-container #vrcmodselph select, .vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrc-sf-time-container #vrcmodselpm select, .vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrc-sf-time-container #vrcmodseldh select, .vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrc-sf-time-container #vrcmodseldm select {
+	width: 100%;
+	padding: 12px 1.75rem 12px .75rem;
+	margin-bottom: 0;
+	line-height: 1;
+	border: 0;
+	border-radius: 2px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-pickup div {
+	width: 100%;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes {
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrcsfentrycont {
+	display: flex;
+  	flex-wrap: wrap;
+	flex: 1;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrylabsel {
+	margin-right: 10px;
+	flex: 1;
+}
+.vrc-searchmod-wrap-hybrid .vrcsfentrylabsel .vrcsfentrydate {
+	background: #fff;
+	padding: 0 10px;
+	color: #444;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+	display: flex;
+}
+.vrc-searchmod-wrap-hybrid .vrcsfentrydate .hasDatepicker {
+	border-radius: 0;
+	padding: 0;
+	height: 32px;
+	float: left;
+	margin: 0 10px 0 0;
+	border: 0;
+	box-shadow: none;
+	font-size: .9em;
+	flex: 1;
+	background: #fff;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-categories {
+	flex-basis: 100%;
+	margin-bottom: 10px;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-sbmt {
+	flex-basis: 100%;
+}
+.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-sbmt .vrcsearch {
+	width: 100%;
+	margin-top: 10px;
+}
+
+/* New style Calendar UI */
+.ui-datepicker.ui-widget-content {
+    background: #fff;
+    padding: 0;
+    border: 0;
+    width: 19em;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.ui-datepicker.ui-widget > .ui-datepicker-header {
+    font-weight: bold;
+    border: 0;
+    padding: .4em 3px !important;
+	background: transparent;
+}
+.ui-datepicker.ui-widget table {
+    width: 95%;
+    margin: 0 auto .4em;
+	border-collapse: initial;
+	border-spacing: 2px;
+}
+.ui-datepicker.ui-widget td {
+	border: 1px solid #eee;
+	height: 35px;
+	width: 35px;
+}
+.ui-datepicker.ui-widget td span, .ui-datepicker.ui-widget td a {
+	padding: .2em;
+	height: 35px;
+	line-height: 35px !important;
+	display: block;
+}
+.ui-widget-header .ui-state-hover {
+	border: 1px solid #666;
+	background: #666;
+}
+.ui-datepicker.ui-widget-content .ui-state-disabled, .ui-datepicker.ui-widget-content .ui-state-disabled, .ui-datepicker .ui-widget-header .ui-state-disabled {
+    opacity: .55;
+}
+.ui-datepicker.ui-widget-content .ui-datepicker-prev, .ui-datepicker.ui-widget-content .ui-datepicker-next {
+    top: 6px;
+}
+.ui-datepicker.ui-widget-content .ui-datepicker-prev {
+    left: 6px;
+}
+.ui-datepicker.ui-widget-content .ui-datepicker-next {
+    right: 6px;
+}
+.ui-datepicker th {
+    font-weight: bold;
+    font-size: 14px;
+}
+.ui-datepicker.ui-widget-content .ui-state-default, .ui-datepicker.ui-widget-content .ui-state-default, .ui-datepicker.ui-widget-header .ui-state-default {
+    border: 0;
+    background: transparent;
+    font-weight: normal;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+@media screen and (max-width : 960px) {
+	.vrcdivsearchmodule {
+		padding: 0;
+	}
+	.vrc-searchmod-wrap-horizontal > form > div {
+		margin-bottom: 10px;
+	}
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-pickup {
+		margin-right: 0;
+		width: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-pickup .vrcsfentrycont:first-child {
+		margin-right: 10px;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrcsfentrycont {
+		flex: 1;
+	}
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes {
+		width: 100%;
+		margin: 0;
+	}
+	.vrc-searchmod-wrap-horizontal .vrcsfentrycont .vrcsfentrylabsel {
+		flex: 1;
+	}
+	.vrc-searchmod-wrap-horizontal form > .vrc-searchmod-section-categories {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrc-searchmod-section-sbmt {
+		flex-basis: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrc-searchmod-section-sbmt .vrcsfentrysubmit > button {
+		width: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrcsfentrycont {
+		margin-right: 0;
+	}
+	.vrc-searchmod-wrap-horizontal .vrcsfentrycont .vrcsfentrylabsel {
+		min-width: initial;
+	}
+}
+@media screen and (max-width : 760px) {
+	.vrc-searchmod-wrap-horizontal form .vrc-searchmod-section-sbmt {
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.vrc-searchmod-wrap-hybrid .vrcsfentrycont .vrcsfentrytime {
+		width: 100%;
+  		margin: 10px 0;
+	}
+	.vrc-searchmod-wrap-hybrid .vrcsfentrycont .vrc-sf-time-container {
+		display: flex;
+	}
+	.vrc-searchmod-wrap-hybrid .vrc-sf-time-container > span:not(.vrctimesep) {
+		flex: 1;
+	}
+}
+@media screen and (max-width : 680px) {
+	.vrc-searchmod-wrap-horizontal {
+    	text-align: left;
+    	flex-wrap: wrap;
+	}
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-pickup {
+	    width: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrc-searchmod-section-pickup .vrcsfentrycont {
+    	flex: 1;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrcsfentrycont select {
+    	width: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-pickup, .vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes {
+		margin-right: 0;
+	}
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes {
+    	flex-wrap: wrap;
+	}
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-datetimes .vrcsfentrycont {
+    	display: flex;
+	}
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-datetimes .vrcsfentrylabsel {
+    	flex: 1;
+	}
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-sbmt {
+    	width: 100%;
+    	margin-top: 10px;
+	}
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-sbmt .vrcsfentrycont {
+		margin-right: 0;
+	}
+	.vrc-searchmod-wrap-horizontal .vrcsfentrysubmit .vrcsearch {
+    	width: 100% !important;
+	}
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-categories {
+		flex-basis: 100%;
+	}
+}
+
+@media screen and (max-width : 580px) {
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-pickup {
+		flex-wrap: wrap;
+	}
+	.vrc-searchmod-wrap-vertical form .vrc-searchmod-section-datetimes .vrcsfentrylabsel {
+		flex: 1;
+	}
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-datetimes .vrcsfentrycont {
+		flex-basis: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont:first-child {
+		margin-right: 0;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrc-searchmod-section-pickup .vrcsfentrycont {
+		flex-basis: 100%;	
+	}
+	.vrc-searchmod-wrap-horizontal form .vrc-searchmod-section-pickup .vrcsfentrycont:first-child {
+		margin-right: 0;
+	}
+	.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-pickup .vrcsfentrycont, .vrc-searchmod-wrap-hybrid .vrc-searchmod-section-pickup .vrcsfentrycont:first-child {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+	.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes {
+		flex-wrap: wrap;
+	}
+	.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-pickup .vrcsfentrycont:first-child, .vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrcsfentrycont:first-child {
+		margin-right: 0;
+	}
+	.vrc-searchmod-wrap-hybrid .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrylabsel {
+		margin-right: 0;
+	}
+}
+@media screen and (max-width : 360px) {
+	.vrc-searchmod-wrap-vertical .vrcsfentrycont .vrc-sm-time-container {
+		display: flex;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrc-searchmod-section-pickup .vrcsfentrycont,
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrylabsel,
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrytime,
+	.vrc-searchmod-wrap-vertical form .vrc-searchmod-section-pickup .vrcsfentrycont,
+	.vrc-searchmod-wrap-vertical .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrylabsel,
+	.vrc-searchmod-wrap-vertical .vrc-searchmod-section-datetimes .vrcsfentrycont .vrcsfentrytime {
+    	flex-basis: 100%;
+    	margin: 5px 0;
+	}
+	.vrc-searchmod-wrap-horizontal .vrcsfentrycont #vrcmodselph, .vrc-searchmod-wrap-horizontal .vrcsfentrycont #vrcmodselpm, .vrc-searchmod-wrap-horizontal .vrcsfentrycont #vrcmodseldh, .vrc-searchmod-wrap-horizontal .vrcsfentrycont #vrcmodseldm,
+	.vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodselph, .vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodselpm, .vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodseldh, .vrc-searchmod-wrap-vertical .vrcsfentrycont #vrcmodseldm {
+		flex: 1;
+	}
+}

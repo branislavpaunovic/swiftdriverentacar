@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRENTCAR_CARSLIST_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRENTCAR_CARSLIST_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Cars List" >
+		<message><![CDATA[VikRentCar Cars List]]></message>
+	</view>
+	<state>
+		<name>Cars List</name>
+		<description>VikRentCar Cars List</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="layoutstyle" type="list" default="list" label="COM_VIKRENTCAR_LAYOUT_STYLE">
+				<option value="list">COM_VIKRENTCAR_LAYOUT_LIST</option>
+				<option value="grid">COM_VIKRENTCAR_LAYOUT_GRID</option>
+			</field>
+			<field name="category_id" type="sql" label="COM_VIKRENTCAR_CATEGORY_FIELD_SELECT_TITLE" description="COM_VIKRENTCAR_CATEGORY_FIELD_SELECT_TITLE_DESC" query="SELECT `id`, `name` FROM `#__vikrentcar_categories` ORDER BY `name` ASC" key_field="id" value_field="name" required="false">
+				<option value="0">--</option>
+			</field>
+			<field name="orderby" type="list" default="price" label="COM_VIKRENTCAR_ORDERBY_FIELD_TITLE">
+				<option value="price">COM_VIKRENTCAR_ORDERBY_FIELD_PRICE</option>
+				<option value="customprice">COM_VIKRENTCAR_ORDERBY_FIELD_CUSTOMPRICE</option>
+				<option value="name">COM_VIKRENTCAR_ORDERBY_FIELD_NAME</option>
+			</field>
+			<field name="ordertype" type="list" default="asc" label="COM_VIKRENTCAR_ORDERTYPE_FIELD_TITLE">
+				<option value="asc">COM_VIKRENTCAR_ORDERTYPE_FIELD_ASC</option>
+				<option value="desc">COM_VIKRENTCAR_ORDERTYPE_FIELD_DESC</option>
+			</field>
+			<field name="lim" type="text" label="COM_VIKRENTCAR_CARSLISTLIM_FIELD_TITLE" required="false" default="20" />
+		</fieldset>
+	</fields>
+</metadata>
+

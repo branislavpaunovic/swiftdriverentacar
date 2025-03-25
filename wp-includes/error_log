@@ -1,0 +1,48 @@
+[15-Mar-2025 08:00:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/swiftdri/public_html/wp-includes/class-wp-http.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/class-wp-http.php on line 11
+[15-Mar-2025 08:00:51 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Dependencies" not found in /home/swiftdri/public_html/wp-includes/class-wp-scripts.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/class-wp-scripts.php on line 18
+[15-Mar-2025 08:00:52 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Dependencies" not found in /home/swiftdri/public_html/wp-includes/class-wp-styles.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/class-wp-styles.php on line 18
+[15-Mar-2025 08:01:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_block_template_html() in /home/swiftdri/public_html/wp-includes/template-canvas.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/template-canvas.php on line 12
+[17-Mar-2025 15:58:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/swiftdri/public_html/wp-includes/class-wp-http.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/class-wp-http.php on line 11
+[17-Mar-2025 15:58:13 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Dependencies" not found in /home/swiftdri/public_html/wp-includes/class-wp-scripts.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/class-wp-scripts.php on line 18
+[17-Mar-2025 15:58:13 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Dependencies" not found in /home/swiftdri/public_html/wp-includes/class-wp-styles.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/class-wp-styles.php on line 18
+[17-Mar-2025 15:58:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_block_template_html() in /home/swiftdri/public_html/wp-includes/template-canvas.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/template-canvas.php on line 12
+[18-Mar-2025 00:42:22 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/swiftdri/public_html/wp-includes/class-wp-http.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/class-wp-http.php on line 11
+[18-Mar-2025 00:42:23 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Dependencies" not found in /home/swiftdri/public_html/wp-includes/class-wp-scripts.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/class-wp-scripts.php on line 18
+[18-Mar-2025 00:42:24 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Dependencies" not found in /home/swiftdri/public_html/wp-includes/class-wp-styles.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/class-wp-styles.php on line 18
+[18-Mar-2025 00:42:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_block_template_html() in /home/swiftdri/public_html/wp-includes/template-canvas.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/template-canvas.php on line 12

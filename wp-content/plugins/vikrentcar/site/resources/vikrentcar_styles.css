@@ -1,0 +1,4200 @@
+/** 
+ * @package   	VikRentCar
+ * @subpackage 	front-end styles
+ * @author    	E4J s.r.l.
+ * @link 		https://vikwp.com
+ */
+
+:root {
+	/* Backgrounds */
+	--vrc-white-bg-color: #fff;
+	--vrc-grey-bg-color: #eee;
+	--vrc-light-grey-bg-color: #f6f6f6;
+	--vrc-dark-grey-bg-color: #444;
+	--vrc-dark-grey-bg-color-hover: #666;
+	
+	/* Borders */
+	--vrc-border-color: #ddd;
+	--vrc-light-border-color: #eee;
+	
+	/* Texts */
+	--vrc-text-color: #444;
+	--vrc-light-text-color: #999;
+	--vrc-contrast-text-color: #fff;
+
+	/* Input Style */
+	--vrc-input-style: #fff;
+	--vrc-input-style-deactive: #f6f7f7;
+	--vrc-input-style-nested-deactive: #eee;
+
+	/* Colors */
+	--vrc-darkblue-color: #144D5C;
+	--vrc-blue-color: #3286B8;
+	--vrc-blue-color-hover: #2B74A0;
+	--vrc-lightblue-color: #80b3ca;
+	--vrc-lightblue-color-hover: #649fbb;
+	--vrc-green-color: #52aa20;
+	--vrc-green-color-hover: #4c794c;
+	--vrc-orange-color: #FF8000;
+	--vrc-orange-color-hover: #D06800;
+	--vrc-red-color: #c70000;
+	--vrc-red-color-hover: #9f0000;
+}
+
+.vrcselectr a, .vrcselectr-result, .vrc-pkglist-pkg-details a, .vrc-pkgdet-car-booknow-btn {
+    transition: all 400ms ease-in-out 0s;
+    -moz-transition: all 400ms ease-in-out 0s;
+    -webkit-transition: all 400ms ease-in-out 0s;
+    -o-transition: all 400ms ease-in-out 0s;
+    background: var(--vrc-darkblue-color);
+    cursor: pointer;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: var(--vrc-contrast-text-color);
+    margin: 8px 0 0;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.vrcselectr a:hover, .vrcselectr-result:hover, .vrc-pkglist-pkg-details a:hover, .vrc-pkgdet-car-booknow-btn {
+    transition: all 400ms ease-in-out 0s;
+    -moz-transition: all 400ms ease-in-out 0s;
+    -webkit-transition: all 400ms ease-in-out 0s;
+    -o-transition: all 400ms ease-in-out 0s;
+	color: var(--vrc-contrast-text-color);
+    background: var(--vrc-blue-colo);
+    text-decoration: none;
+}
+.vrc-coupon-outer {
+	background: none repeat scroll 0 0 var(--vrc-light-grey-bg-color);
+    border: 1px solid var(--vrc-lightblue-color);
+    color: var(--vrc-dark-grey-bg-color-hover);
+    margin: 0;
+    padding: 15px;   
+	margin: 5px;
+	border-radius: 6px;
+}
+/* Locations List */
+.vrc-locationslist-wrapper {
+	margin-top: 15px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 10px;
+}
+.vrclocationbox {
+	border: 1px solid var(--vrc-border-color);
+	width: auto;
+	background: var(--vrc-light-grey-bg-color);
+	padding: 15px;
+}
+.vrclocationbox h3 {
+	font-weight:bold;
+	margin:0 0 3px 0;
+	font-size: 18px !important;
+}
+.vrclocationbox .vrcloclistloc-address {
+	font-size: .9em;
+	margin-bottom: 0;
+	color: var(--vrc-dark-grey-bg-color-hover);
+}
+.vrclocationbox .vrcloclistloctimebox {
+	color: var(--vrc-text-color);
+	font-weight: bold;
+	font-size: .9em;
+}
+.vrc-oconfirm-middlep > div:only-child {
+	margin: 0;
+	text-align: center;
+}
+.vrc-coupon-outer form {
+	margin-bottom: 0;
+}
+.vrc-enterpin-block {
+	background: var(--vrc-grey-bg-color);
+	border: 1px solid var(--vrc-border-color);
+	padding: 15px;
+	margin: 5px;
+	border-radius: 6px;
+}
+.vrc-enterpin-block .vrc-enterpin-top span {
+	display: block;
+}
+.vrc-enterpin-block .vrc-enterpin-top > span {
+	margin-bottom: 5px;
+}
+.vrcentercoupon span {
+	display:block;
+	padding:0 0 5px 0;
+}
+.vrc-oconfirm-middlep input[type="text"] {
+	background: none repeat scroll 0 0 var(--vrc-white-bg-color);
+    border: 1px solid var(--vrc-border-color);
+    border-radius: 3px;
+    box-shadow: none;
+    color: var(--vrc-dark-grey-bg-color-hover);
+    padding: 10px 8px;
+	display: inline-block;
+}
+.vrcentercoupon .btn {
+	background: var(--vrc-green-color);
+    border: 1px solid var(--vrc-green-color);
+    border-radius: 5px;
+    color: var(--vrc-contrast-text-color);
+    cursor: pointer;
+	padding: 10px 14px;
+	margin: 0 0 0 5px;
+	width: auto;
+	vertical-align: top;
+}
+.vrcentercoupon .btn:hover {
+	background:var(--vrc-green-color-hover);
+	border: 1px solid var(--vrc-green-color-hover);
+}
+.vrclocationbox .vrcloclistloctimebox {
+	color:var(--vrc-darkblue-color);
+}
+.vrclocationbox .vrcloclistlocdescr {
+	margin:10px 0 0 0;
+}
+.vrclocationbox .vrcloclistlocdescr p {
+	margin: 0px 0 5px 0;	
+}
+.vrcvordudata-cnt {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrcvordudata-cnt > div {
+	flex: 1;
+	margin: 5px;
+	padding: 24px;
+	border-radius: 6px;
+	border: 1px solid var(--vrc-light-border-color);
+	box-shadow: 0 3px 3px 0 rgba(50,54,72,.08);
+}
+.vrcvordudata p {
+	margin:0;
+	padding:0;
+}
+.vrcvordudata span {
+	display:block;
+}
+.vrc-imgorder-block {
+	display: inline-block;
+	margin: 0 10px 10px 0;
+}
+.vrc-imgorder-block img {
+	max-width: 200px;
+	border-radius: 4px;
+}
+.vrcvordcarinfo p, .vrcvordcosts p {
+	margin:0;
+	padding:0;
+}
+.vrcvordcosts {
+	font-size: 1.1em;
+	line-height: 1.8em;
+	border: 1px solid var(--vrc-border-color);
+	border-top: 3px solid var(--vrc-light-border-color);
+	/*box-shadow: 0 3px 3px 0 rgba(50,54,72,.08);*/
+	padding: 24px;
+	flex-wrap: wrap;
+	border-radius: 6px;
+	margin: 10px 5px 5px;
+}
+.vrcvordcosts .vrcvordcoststot {
+	color: var(--vrc-blue-color);
+    font-size: 1.2em;
+    font-weight: bold;
+	border-top: 1px solid var(--vrc-border-color);
+	padding-top: 10px;
+	margin-top: 10px;
+}
+.vrcvordcosts .vrc_priceorder {
+	float: right;
+}
+.vrcvordpaynote {
+	margin: 20px 0 0;
+}
+.vrcvordpaybutton {
+	text-align: center;
+	margin: 20px 0 40px;
+	padding: 20px;
+	border: 1px solid var(--vrc-light-border-color);
+	box-shadow: 0 10px 10px rgba(0,0,0,.05);
+	border-radius: 6px;
+}
+.vrcvordpaybutton > form {
+	margin-top: 15px;
+}
+.offline-cc-overlay-outer {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.offline-cc-overlay-inner {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	height: 70%;
+	max-width: 580px;
+	z-index: 101;
+	padding: 0;
+	border-radius: 16px;
+	background-color: var(--vrc-white-bg-color);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .5);
+	overflow: auto;
+	text-align: center;
+}
+.offline-cc-container {
+	margin: 0 30px 30px;
+}
+.offline-cc-row-group-cardpan {
+	display: flex;
+	flex-wrap: wrap;
+}
+.offline-cc-row-group-cardpan .offline-cc-row-cardtype {
+  flex-basis: 200px;
+}
+.offline-cc-container .offline-cc-row {
+	margin: 8px 0;
+}
+.offline-cc-container .offline-cc-lbl {
+	margin-bottom: 3px;
+	text-align: left;
+	font-size: .9em;
+	color: var(--vrc-dark-grey-bg-color-hover);
+}
+.offline-cc-container .offline-cc-row .offline-cc-value {
+	display: flex;
+}
+.offline-cc-container .offline-cc-row .offline-cc-value select[name="credit_card_type"] {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	border-right: 0;
+}
+.offline-cc-container .offline-cc-row .offline-cc-value > * {
+	flex: 1;
+	height: 50px !important;
+	padding: 8px 10px;
+	background: var(--vrc-white-bg-color);
+	border: 1px solid var(--vrc-border-color);
+	border-radius: 6px !important;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 5%);
+}
+.offline-cc-row-group-cardpan .offline-cc-row-cardpan {
+	flex: 1;
+}
+.offline-cc-container .offline-cc-row .offline-cc-value #credit_card_number {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+.offline-cc-container .offline-cc-row .offline-cc-value select[name="expire_month"] {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.offline-cc-container .offline-cc-row .offline-cc-value select[name="expire_year"] {
+	flex-basis: 100px;
+	flex-grow: 0;
+	border-left: 0;
+	border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+.offline-cc-container .offline-cc-row .offline-cc-value #credit_card_cvv {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-left: 0;
+}
+.offline-cc-container .offline-cc-row-group-validity, .offline-cc-container .offline-cc-row-group-cardholder {
+	display: flex;
+	flex-wrap: wrap;
+}
+.offline-cc-container .offline-cc-row-group-validity .offline-cc-row-validity {
+	flex: 1;
+}
+.offline-cc-container .offline-cc-row-group-validity .offline-cc-row-cvv {
+	flex-basis: 120px;
+}
+.offline-cc-container .offline-cc-row-group-cardholder > div {
+	flex: 1;
+}
+.offline-cc-container .offline-cc-row-group-cardholder .offline-cc-row-lname input {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+.offline-cc-container .offline-cc-row-group-cardholder .offline-cc-row-fname input {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	border-right: 0;
+}
+.offline-cc-container .offline-cc-row-submit {
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.offline-cc-container .offline-cc-row-submit .button {
+	background: var(--vrc-dark-grey-bg-color);
+	border: 1px solid var(--vrc-dark-grey-bg-color);
+	color: var(--vrc-contrast-text-color);
+	box-shadow: 0 2px 4px rgb(0 0 0 / 5%);
+}
+.offline-cc-container .offline-cc-row-submit .button:hover {
+	background: var(--vrc-dark-grey-bg-color-hover);
+	border: 1px solid var(--vrc-dark-grey-bg-color-hover);
+}
+.offline-cc-overlay-inner > p {
+	border-bottom: 1px solid var(--vrc-border-color);
+	margin-bottom: 25px;
+	padding: 20px 30px 15px;
+	font-size: 16px;
+}
+.offline-cc-overlay-inner h1 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+.offline-cc-overlay-closer {
+	float: right;
+	cursor: pointer;
+	padding: 8px 15px;
+}
+.vrcvordcarinfo .vrcvordcarinfotitle {
+	font-weight:bold;
+}
+.vrcvordudata .vrcvordudatatitle {
+	margin-bottom: 9px;
+	display: block;
+	border-bottom: 1px solid var(--vrc-border-color);
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	color: var(--vrc-light-text-color);
+}
+.car_container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 0;
+}
+.car_container > div {
+	flex: 1;
+}
+.vrc-cdetails-infocar {
+	padding: 0 15px;
+}
+.car_img_box {
+	float: left;
+	margin-right: 12px;
+	margin-bottom:10px;
+}
+.car_description_box {
+	display: inline;
+}
+.vrc-cdetails-cgroup {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.vrc-cdetails-cgroup .vrclistcarname {
+    font-weight: bold;
+    padding: 0 0 5px;
+    width: 100%;
+}
+.vrc-cdetails-cgroup .vrclistcarcat {
+    color: var(--vrc-light-text-color);
+    font-size: .9em;
+}
+.car_carats {
+    display: inline-block;
+}
+.car_carats table td {
+    padding: 10px !important;
+	margin:0 3px 5px 0;
+	border-right:1px dotted var(--vrc-border-color);
+	vertical-align:middle;
+}
+.car_carats table tr td:last-child {
+	border:0;
+}
+.vrc-oconfirm-paym-block {
+	display: inline-block;
+	width: 100%;
+	margin: 20px 0;
+	border: 1px solid var(--vrc-border-color);
+	border-radius: 6px;
+	padding: 20px 30px;
+}
+.vrc-oconfirm-paym-block ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-oconfirm-paym-block .vrc-noliststyletype {
+	margin-left: 0;
+}
+.vrc-oconfirm-paym-block ul li {
+	display: flex;
+	vertical-align: top;
+	margin: 5px 15px 5px 0;
+	margin-left: 0 !important;
+	padding: 8px 15px;
+	line-height: 37px;
+	list-style-type: none !important;
+	border: 2px solid var(--vrc-light-border-color);
+	border-radius: 6px;
+	position: relative;
+	cursor: pointer;
+}
+.vrc-oconfirm-paym-block .vrc-medium-header {
+	color: var(--vrc-dark-grey-bg-color);
+	font-size: 1.2em;
+	margin: 10px 0 0;
+	padding: 0px 0 10px 0px !important;
+	font-weight: bold;
+	border-bottom: 1px solid var(--vrc-light-border-color);
+}
+.vrc-oconfirm-paym-block ul li label {
+	margin-left:5px;
+}
+.vrc-oconfirm-paym-block .vrc-gpay-licont-active {
+	border-color: var(--vrc-green-color);
+	background: var(--vrc-input-style-deactive);
+}
+.vrc-oconfirm-paym-block .vrc-gpay-licont-active:before {
+	content: "\f00c";
+	width: 21px;
+	height: 21px;
+	color: var(--vrc-contrast-text-color);
+	font-size: 10px;
+	text-align: center;
+	line-height: 19px;
+	font-family: "Font Awesome 5 Free", FontAwesomes !important;
+	font-weight: 900;
+	background: var(--vrc-green-color);
+	position: absolute;
+	top: -11px;
+	border-radius: 50%;
+	right: -10px;
+	border: 2px solid var(--vrc-white-bg-color);
+}
+.vrc-oconfirm-paym-block li > * {
+    align-self: center;
+}
+.vrc-oconfirm-paym-block .vrc-payment-image img {
+    max-height: 25px;
+}
+.vrc-oconfirm-paym-block li label {
+    margin-left: 5px;
+    margin-bottom: 0;
+    display: inline-block !important;
+    cursor: pointer;
+}
+.vrc-oconfirm-paym-block li input {
+    display: inline-block !important;
+    width: auto;
+    height: auto;
+}
+.vrc-alert-container-confirm {
+	background-color: var(--vrc-orange-color);
+	box-shadow: 5px 5px 5px 0 var(--vrc-border-color);
+	color: var(--vrc-contrast-text-color);
+	left: 35%;
+	opacity: 1;
+	padding: 20px;
+	position: fixed;
+	top: 35%;
+	transition: opacity 0.6s ease 0s;
+	width: 30%;
+}
+.vrc-alert-close {
+	margin-left: 15px;
+	color: var(--vrc-contrast-text-color);
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.vrhword {
+	font-weight:bold;
+	display: block;
+}
+
+.car_prices, .car_options {
+	width: 100%;
+	margin: 10px 0 8px 0;
+	box-sizing: border-box;
+	border: 1px solid var(--vrc-grey-bg-color);
+	border-radius: 4px;
+}
+.car_prices .vrhword {
+	background: var(--vrc-light-grey-bg-color);
+	padding: 10px;
+	border-bottom: 0;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.vrc-showprc-prices-wrap {
+	margin-top: 20px;
+}
+.vrc-showprc-prices-wrap .vrc-showprc-title {
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+.vrc-showprc-prices-inner .vrc-showprc-price-row {
+	display: flex;
+	border: 1px solid var(--vrc-border-color);
+	padding: 15px 10px;
+	margin: 10px 0;
+	border-top: 3px solid var(--vrc-light-border-color);
+	border-radius: 6px;
+}
+.vrc-showprc-prices-inner .vrc-showprc-price-row:first-child {
+	margin-top: 0;
+}
+.vrc-showprc-prices-inner .vrc-showprc-price-row:hover, .vrc-showprc-prices-inner .vrc-showprc-price-row.vrc-showprc-price-selected {
+	border-color: var(--vrc-blue-color);
+	cursor: pointer;
+}
+.vrc-showprc-prices-inner .vrc-showprc-price-row-cell-first {
+	flex: 1;
+}
+.vrc-showprc-prices-inner .vrc-showprc-price-row-cell-last {
+	margin-left: auto;
+	align-self: center;
+}
+.vrc-showprc-prices-inner .vrc-showprc-price-row-cell-first label {
+	display: block;
+	margin-right: 15px;
+}
+.vrc-showprc-prices-inner .vrc-showprc-priceinfo {
+	display: flex;
+	font-size: 1.2em;
+}
+.vrc-showprc-prices-inner .vrc-showprc-priceinfo .vrc-promo-price-icon {
+	color: var(--vrc-orange-color);
+	font-size: 18px;
+	margin-right: 5px;
+}
+.vrc-showprc-prices-inner .vrc-showprc-priceinfo .vrc-showprc-pricecost {
+	margin-left: auto;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.vrc-showprc-priceinfo .vrc-showprc-pricecost {
+	display: inline-block;
+	margin-left: 10px;
+}
+.vrc-showprc-options-wrap {
+	margin-top: 30px;
+}
+.vrc-showprc-options-wrap .vrc-showprc-title {
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+.vrc-showprc-options-wrap .vrc-showprc-options-inner {
+	border: 1px solid var(--vrc-border-color);
+	border-radius: 6px;
+	padding: 10px;
+	border-top: 3px solid var(--vrc-light-border-color);
+}
+.vrc-showprc-options-wrap .vrc-showprc-option-row {
+	display: flex;
+	border-bottom: 1px solid var(--vrc-border-color);
+	padding: 13px 0;
+}
+.vrc-showprc-options-wrap .vrc-showprc-option-row:last-child {
+	border-bottom: 0;
+}
+.vrc-showprc-option-row .vrc-showprc-option-cell-info {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-showprc-option-row .vrc-showprc-option-img {
+	margin-right: 10px;
+}
+.vrc-showprc-option-row .vrc-showprc-option-img img {
+	max-width: 100px;
+	border-radius: 4px;
+}
+.vrc-showprc-option-row .vrc-showprc-option-name-descr {
+	flex: 1;
+	margin-right: 10px;
+}
+.vrc-showprc-option-row .vrc-showprc-option-name {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.vrc-showprc-option-row .vrc-showprc-option-cell-descr {
+	font-size: .9em;
+}
+.vrc-showprc-option-row .vrc-showprc-option-cell-price {
+	margin-left: auto;
+	display: flex;
+	font-weight: bold;
+}
+.vrc-showprc-option-row .vrc-showprc-option-cell-price .vrc-showprc-option-cell-price-descr {
+	margin-right: 15px;
+}
+.vrcarsfound {
+	font-size: .9em;
+	color: var(--vrc-light-text-color);
+	border-bottom:1px solid var(--vrc-border-color);
+	padding:0 0 5px 0;
+}
+.vrc-tableopt-td-ckbx {
+	text-align: right;
+}
+.car_options .vrcoptionaldescr {
+	padding:0 0 10px 0;
+}
+.car_options .vrhword {
+	background: var(--vrc-light-grey-bg-color);
+	padding: 10px;
+	border-bottom: 0;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.car_options p {
+	padding:0;
+	margin:0;
+}
+.car_options.table-responsive table td, .car_options.table-responsive table th {
+	border-bottom: 1px solid var(--vrc-grey-bg-color);
+}
+.car_options table tr:last-child td {
+	border-bottom: 0;
+}
+.car_options table td input {
+	padding:3px;
+	border-radius:3px;
+	border:1px solid var(--vrc-border-color);
+	background: var(--vrc-input-style-deactive);
+	box-shadow:0 0 2px var(--vrc-border-color) inset;
+	color: var(--vrc-dark-grey-bg-color);
+	font-family:"Century Gothic", Tahoma, Arial;
+}
+.car_options table .vrc-tableopt-td-img img {
+	padding-right: 10px;
+	max-height: 122px;
+}
+.car_buttons_box {
+	margin:15px 0 0 0;
+	display: inline-block;
+	width: 100%;
+}
+.car_buttons_box .booknow {
+	margin:0 0 15px 0;
+}
+.car_buttons_box .vrc-goback-block {
+	float: left;
+}
+.booknow {
+	background: var(--vrc-blue-color);
+	border:0;
+	cursor: pointer;
+	border-radius:4px;
+	color: var(--vrc-contrast-text-color);
+	text-transform:uppercase;
+	padding: 10px 20px;
+	margin:10px 0 10px 0;
+}
+.car_buttons_box .booknow {
+	float: right;
+}
+
+.vrc-goback-block {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	margin: 20px 0 0;
+}
+
+.vrc-goback-block a {
+	display: inline-block;
+	text-transform:uppercase;
+	font-size: .9em;
+	color:var(--vrc-dark-grey-bg-color-hover);
+	padding: 10px 25px;
+	text-decoration: none !important;
+}
+
+.vrcrentalriepilogo {
+	color: var(--vrc-dark-grey-bg-color-hover);
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;	
+}
+.vrcinfocarcontainer {
+	display: flex;
+	flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0 0;
+}
+.vrcinfocarcontainer > div {
+	flex: 1;
+}
+.vrcinfocarcontainer .vrc-summary-car-img img {
+	float: right;
+	max-width: 100%;
+}
+.vrcrentforlocs {
+	display: inline-block;
+	margin: 5px 0 0;
+	clear: both;
+	border: 1px solid var(--vrc-border-color);
+	padding: 30px;
+	border-radius: 8px;
+}
+.vrcrentalfor {
+    margin: 0 0 10px;
+    padding: 0;
+    width: auto;
+} 
+.vrc-itinerary-confirmation {
+	position: relative;
+	padding-left: 25px;
+}
+.vrc-itinerary-confirmation::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    left: 0px;
+}
+.vrc-itinerary-confirmation h4 {
+	font-size: .9em;
+	text-transform: uppercase;
+}
+.vrc-itinerary-confirmation > div {
+	position: relative;
+}
+.vrc-itinerary-confirmation > div > div {
+	margin: 2px 0;
+	display: flex;
+}
+.vrc-itinerary-confirmation > div > div > * {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 8px;
+}
+.vrc-itinerary-confirmation > div > div > i {
+	margin: 6px 5px 0 0;
+	font-size: .9em;
+}
+.vrc-itinerary-confirmation .vrc-itinerary-pickup {
+	margin-bottom: 0;
+	padding-bottom: 16px;
+}
+.vrc-itinerary-confirmation .vrc-itinerary-pickup:before {
+	content: "";
+	position: absolute;
+	left: -27px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 2px solid var(--vrc-border-color);
+	background: var(--vrc-white-bg-color);
+	top: -1px;
+	z-index: 1;
+}
+.vrc-itinerary-confirmation .vrc-itinerary-pickup::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border-left: 2px dashed var(--vrc-border-color);
+    left: -20px;
+    top: 0;
+    z-index: 0;
+}
+.vrc-itinerary-confirmation .vrc-itinerary-dropoff::after {
+    content: "";
+    position: absolute;
+    left: -27px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--vrc-border-color);
+    background: var(--vrc-white-bg-color);
+    bottom: 58px;
+}
+.vrcrentalfordate {
+	padding:0 2px;
+	color:var(--vrc-dark-grey-bg-color)
+}
+.vrcrentalfor .vrcrentalforone {
+	display: inline-block;
+	margin: 0 0 8px 0;
+}
+.vrc-summary-car-img {
+	display: inline-block;
+    padding: 10px;
+}
+.vrcrentalfortwo {
+	border-top: 1px dotted var(--vrc-border-color);
+    color: var(--vrc-dark-grey-bg-color-hover);
+    display: inline-block;
+    font-size: .9em;
+    padding: 10px 0 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+.vrcrentalfortwo p {
+	display:block;
+	margin:0 0 5px 0;
+	padding:0;
+}
+.vrc-table-container {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.vrctableorder {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	line-height:1.6em;
+	margin:25px 0 20px 0;
+	border-collapse: collapse;
+}
+.vrctableorder .vrctableorderfrow {
+    border-bottom: 1px solid var(--vrc-light-border-color);
+}
+.vrctableorder .vrctableorderfrow td {
+	padding:3px 8px;
+	font-size: 1.1em;
+	color: var(--vrc-blue-color);
+}
+.vrctableorder .vrctableordercar td {
+    border-bottom: 1px solid var(--vrc-light-border-color);
+    padding: 20px 0;
+}
+.vrctableorder td, .vrctableorder th {
+	border: 0;
+	word-break: inherit;
+}
+.vrctableorder .vrcordrowtotal .vrctotalord  {
+	font-size: 1.2em;
+}
+.vrctableorder .vrcordrowtotal td { 
+	padding:10px 0 10px 10px;
+	font-weight:bold;
+	background:var(--vrc-grey-bg-color);
+}
+.vrcpickuploc {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    border-radius: 0;
+    color: var(--vrc-dark-grey-bg-color-hover);
+    font-size: 1.2em;
+    margin: 0 85px 0 0;
+    padding: 10px;
+    color: var(--vrc-blue-color);
+}
+.vrclocsboxsum {
+	border-bottom: 1px dotted var(--vrc-border-color);
+    border-top: 1px dotted var(--vrc-border-color);
+    display: inline-block;
+    float: none;
+    margin: 0 0 15px;
+    width: 99%;
+}
+.vrcdropoffloc {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    border-radius: 0;
+    color: var(--vrc-dark-grey-bg-color-hover);
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px;
+    color: var(--vrc-blue-color);
+}
+.vrcdropoffloc + form {
+	clear:both;
+	float:none;
+	padding:10px 0 10px 0;
+	margin:15px 0 0px 0;
+	border-top:1px solid var(--vrc-light-border-color);
+}
+.vrcseparatorcflong {
+	font-size: .9em;
+	padding:15px 0 10px;
+	color:var(--vrc-dark-grey-bg-color-hover);
+}
+.vrcchoosepayment {
+	font-size: 1.1em;
+	text-transform:uppercase;
+	padding:10px 0 10px 0 !important;
+	color:var(--vrc-dark-grey-bg-color-hover);
+	margin:0;
+}
+.vrcchoosepayment+ul {
+	margin:0;
+	padding:0;
+}
+.vrcchoosepayment+ul li {
+	display:inline;
+}
+.vrcpickuploc .vrcpickuplocname, .vrcdropoffloc .vrcdropofflocname {
+    color: var(--vrc-dark-grey-bg-color-hover);
+    display: block;
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 5px 0 0;
+}
+.vrccustomfields {
+	border: 1px solid var(--vrc-border-color);
+	border-radius: 6px;
+	margin-top: 20px;
+	padding: 20px 15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrccustomfields .vrcseparatorcf {
+    color: var(--vrc-dark-grey-bg-color);
+	font-size: 1.2em;
+	margin: 10px 0 0;
+	padding: 0px 0 5px 0px !important;
+	font-weight: bold;
+	border-bottom: 1px solid var(--vrc-light-border-color);
+}
+.vrcdivcustomfield {
+    margin: 0 20px 13px;
+	flex-basis: calc(50% - 40px);
+}
+.vrcdivcustomfield label {
+	font-size: .9em;
+}
+.vrcdivcustomfield input[type="text"], .vrcdivcustomfield input[type="tel"] {
+	width: 100%;
+}
+.vrcdivcustomfield select {
+	width: 100%;
+	padding: 10px 8px;
+	background: var(--vrc-contrast-text-color) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center !important;
+    background-size: 10px 12px !important;
+    appearance: none !important;
+	border: 1px solid var(--vrc-border-color);
+	border-radius: 3px;
+}
+.vrccustomfldinfo {
+    flex-basis: 100%;
+}
+.vrc-oconfirm-cfield-entry-checkbox > div {
+	display: inline-block;
+	vertical-align: top;
+}
+.car_disclaimer {
+	overflow: hidden;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid var(--vrc-border-color);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 8px;
+}
+
+.car_title {
+	border-bottom: 1px solid var(--vrc-border-color);
+    margin: 20px 0 13px;
+    padding: 0 0 5px;
+}
+.vrc-tableopt-td-name {
+	width: 64%;
+}
+.table-responsive table td {
+	border: 0;
+}
+.car_separator {
+	margin-top: 15px;
+}
+
+.car_result {
+	border: 1px solid var(--vrc-border-color);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.vrcsrowprice .vrcsrowpricediv {
+	background:var(--vrc-grey-bg-color);
+	border-radius: 10px;
+	padding:8px !important;
+	color:var(--vrc-darkblue-color);
+	width:90px;
+	text-align:center;
+	border:1px solid var(--vrc-border-color);
+}
+.vrcsrowprice .vrcsrowpricediv .vrcstartfrom {
+	font-size: .9em;
+	display:block;
+}
+.vrcsrowprice .vrcsrowpricediv .car_cost {
+	font-size: 1.4em;
+	font-weight:bold;
+	display:block;
+}
+.vrcsearchcaratt td {
+	padding:10px !important;
+	font-size: .9em;
+	border-bottom:1px dotted var(--vrc-border-color);
+}
+.vrcsearchcaratt tr:last-child td {
+	border:0;
+}
+.vrcrequired {
+	color: var(--vrc-red-color);
+}
+
+.vrcinput {
+	background: var(--vrc-white-bg-color);
+    border: 1px solid var(--vrc-border-color);
+    border-radius: 3px;
+    box-shadow: none;
+    color: var(--vrc-dark-grey-bg-color-hover);
+    padding: 10px 8px;
+}
+.vrcinput:focus {
+	outline: none;
+}
+
+.vrctextarea {
+    background: none repeat scroll 0 0 var(--vrc-input-style);
+    border: 1px solid var(--vrc-border-color);
+    border-radius: 3px;
+    box-shadow: none;
+    padding: 10px 8px;
+    width: 100%;
+	color: var(--vrc-dark-grey-bg-color-hover);
+}
+
+.vrctextarea:focus {
+	outline: none;
+}
+
+.vrclistcontainer {
+	padding: 5px;
+}
+
+.vrclist {
+	list-style-type: none;
+}
+
+.vrclist {
+	margin:0;
+	padding:0;
+}
+.vrclist li {
+	list-style-type: none;
+	margin:0px 10px 15px 0px !important;
+	border-radius: 7px;
+	padding:15px !important;
+	-moz-border-radius: 7px;
+	webkit-border-radius: 7px;
+	border: 1px solid var(--vrc-border-color);
+}
+
+img.vrclistimg {
+	float:left;
+	max-width: 262px;
+	margin:0 15px 10px 0;
+}
+
+.vrclistcarname {
+	display: block;
+	font-weight: bold;
+}
+
+.vrclistcarcat {
+	display: block;
+}
+
+.vrclistdivcost {
+    color: var(--vrc-blue-color);
+    padding: 2px !important;
+}
+
+.vrclistdivcost .vrcliststartfrom {
+	font-size: .9em;
+	margin:4px 0 0 0;
+}
+.car_cost {
+	color: var(--vrc-text-color);
+	font-size: 1.4em;
+	font-weight: bold;
+    margin: 0;
+}
+.vrcliststartfrom {
+	color: var(--vrc-light-text-color);
+}
+.vrclistdivcost .car_cost {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.vrclistgoon {
+   display: inline-block;
+}
+.vrclistgoon a, .vrclistgoon a:visited, .vrclistgoon a:link, .vrclistgoon a:active, .vrcconfnumbsubm input {
+	background: none repeat scroll 0 0 var(--vrc-blue-color);
+    border: 0 none;
+    border-radius: 4px;
+    color: var(--vrc-contrast-text-color);
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 5px 15px;    
+    display: inline-block;
+    text-decoration: none !important;
+}
+.vrclistgoon a {
+	text-transform: uppercase;
+}
+.vrclistgoon a:hover, .vrcconfnumbsubm input:hover {
+	color: var(--vrc-contrast-text-color);
+	background: var(--vrc-darkblue-color);
+}
+form .vrcselectm {
+	background: var(--vrc-white-bg-color) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center !important;
+    background-size: 10px 12px !important;
+    appearance: none !important;
+    font-size: .9em;
+    padding: 6px;
+	margin:10px 0 0 0;
+	border: 1px solid var(--vrc-border-color);
+}
+.vrclistsep {
+	display: block;
+	margin:3px 0 10px 0;
+	height:10px;
+}
+
+vrcdetsep {
+	margin-bottom: 5px;
+    margin-top: 8px;
+}
+.vrclegendediv {
+	clear:both;
+	float:none;
+	margin: 18px 0 10px;
+}
+.vrclegenda {
+	margin-right: 15px;
+	font-weight: bold;
+	padding:5px 0;
+}
+.vrclegendediv .vrclegenda-status, .vrclegenda > span:first-child {
+    border-radius: 2px;
+    margin-right: 5px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.vrclegfree {
+	background: var(--vrc-input-style-deactive);
+	border: 1px solid var(--vrc-border-color);
+}
+.vrclegwarning {
+	background: var(--vrc-orange-color);
+	border: 1px solid var(--vrc-orange-color);
+}
+.vrccal tr td {
+	border: 0;
+	width: 35px;
+	height: 35px;
+	padding: 0 !important;
+    text-align: center;
+	position: relative;
+}
+.vrccal tr td.vrctdpast {
+	opacity: .5;
+}
+.vrccal tr:first-child td {
+	border-bottom: 1px solid var(--vrc-light-border-color);
+}
+.vrccal tr:first-child td:hover {
+	background: transparent;
+}
+.vrctdfree {
+	color: var(--vrc-dark-grey-bg-color);
+	background: var(--vrc-input-style-deactive);
+}
+.vrctdfree:hover {
+	background: var(--vrc-grey-bg-color);
+}
+
+.vrccal .vrctdbusy {
+	color: var(--vrc-contrast-text-color);
+	background: var(--vrc-red-color);
+}
+.vrccal .vrctdbusy:hover {
+	background: var(--vrc-red-color-hover);
+}
+.vrccal .vrctdbusy a, .vrctdbusy:hover a {
+	color: var(--vrc-contrast-text-color);
+}
+.vrctdbusy.vrctdbusyforcheckin, .vrctdbusy.vrctdbusycheckout {
+	background-color: var(--vrc-input-style-deactive);
+	overflow: hidden !important;
+}
+.vrctdbusy.vrctdbusyforcheckin:hover, .vrctdbusy.vrctdbusycheckout:hover {
+	background: var(--vrc-grey-bg-color);
+}
+.vrctdbusy.vrctdbusyforcheckin a, .vrctdbusy.vrctdbusycheckout a, .vrctdbusy.vrctdbusyforcheckin, .vrctdbusy.vrctdbusycheckout span {
+	color: initial;
+	position: relative;
+	z-index: 1;
+}
+.vrccal .vrctdbusycheckout.vrctdbusy-threequarters a, .vrccal .vrctdbusycheckout.vrctdbusy-threequarters span {
+	z-index: 1;
+  	position: relative;
+}
+/* 
+ * The following code has been overwritten by the ".vrccal .vrctdbusy.vrctdbusycheckout:after" style to avoid any problem. 
+ * If a customer want enable the three day status again, he just need to copy this code in the Vik Rent Car CSS parameter.
+ * - START
+ */
+.vrccal .vrctdbusycheckout.vrctdbusy-threequarters a, .vrccal .vrctdbusycheckout.vrctdbusy-threequarters span {
+	/* color: var(--vrc-contrast-text-color); */
+}
+.vrccal .vrctdbusyforcheckin:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0px 20px 20px 0;
+	border-color: transparent var(--vrc-red-color) transparent transparent;
+	border-radius: 0;
+	top: 0;
+	bottom: 0;
+	left: auto;
+	right: 0;
+	text-decoration: none;
+}
+.vrccal .vrctdbusy.vrctdbusy-threequarters:after {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0px 0px 55px 70px;
+	border-color: transparent transparent transparent var(--vrc-red-color);
+	border-radius: 0;
+	left: 0;
+	right: 0;
+}
+.vrccal .vrctdbusy.vrctdbusy-twoquarters:after {
+	width: 0;
+	height: 0;
+	background: transparent;
+	border-style: solid;
+	border-width: 0px 0px 30px 35px;
+	border-color: transparent transparent transparent var(--vrc-red-color);
+	border-radius: 0;
+	left: 0;
+	right: 0;
+}
+.vrccal .vrctdbusy.vrctdbusy-onequarter:after {
+	width: 0;
+	height: 0;
+	background: transparent;
+	border-style: solid;
+	border-width: 0px 0px 20px 20px;
+	border-color: transparent transparent transparent var(--vrc-red-color);
+	border-radius: 0;
+	left: 0;
+	right: 0;
+}
+/*
+ * - END
+ */
+
+.vrccal .vrctdbusy.vrctdbusycheckout:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: auto;
+	right: 0;
+	border: 0;
+	background: linear-gradient(to top left, transparent 49.5%, var(--vrc-red-color) 50.5%);
+}
+
+.vrccal .vrctdwarning {
+	color: var(--vrc-dark-grey-bg-color) !important;
+	background: var(--vrc-orange-color) !important;
+}
+.vrccal .vrctdwarning:hover {
+	background: var(--vrc-orange-color-hover) !important;
+}
+.vrccal .vrctdwarning a {
+	color: var(--vrc-contrast-text-color) !important;
+}
+.vrccal tr td a {
+	display: block;
+	color: var(--vrc-darkblue-color);
+}
+.vrccal tr td a:hover {
+	color: var(--vrc-blue-color);
+}
+.vrccal tr td .vrc-cdetails-cal-pickday {
+	display: block;
+	cursor: pointer;
+}
+.vrclegbusy {
+	background: var(--vrc-red-color);
+	border: 1px solid var(--vrc-red-color);
+}
+.vrclegendediv .vrclegenda-lbl {
+    display: inline-block;
+    vertical-align: middle;
+}
+.vrccaldays {
+	font-size: .9em;
+	padding:2px;
+}
+.vrccalcontainer {
+	border:0;
+	border-spacing:0;
+	border-collapse: collapse;
+}
+.vrccalcontainer td {
+	border: 0 none;
+    margin: 5px;
+    padding: 5px 5px 5px 0px;
+}
+.vrccalcontainer .vrccal {
+	border-radius:4px;
+}
+.vrccalform, .vrccalform tr, .vrccalform tr td {
+	border:0;
+}
+.vrccalform tr td {
+	padding:3px;
+}
+.vrccalform tr td select {
+	padding:2px;
+	color:var(--vrc-dark-grey-bg-color-hover);
+	font-size: .9em;
+}
+.vrccalform tr td img.calendar {
+	margin:0 0 0 5px;
+}
+.vrc-hourlycal-container {
+	margin-bottom: 30px;
+}
+.vrc-hourlycal-container h4 {
+	margin-bottom: 15px;
+}
+.vrc-hourlycal-container .table-responsive {
+	border-radius: 4px;
+	border: 1px solid var(--vrc-border-color);
+}
+.vrc-hourlycal-container .table-responsive table {
+	margin-bottom: 0;
+}
+.vrc-hourly-cal .vrc-hourlycal-rowavail {
+	border-top: 1px solid var(--vrc-border-color);
+}
+.vrc-hourlycal-container .table-responsive td {
+	border-left: 1px solid var(--vrc-border-color);
+	text-align: center;
+	font-size: .9em;
+	font-weight: bold;
+	line-height: 15px;
+}
+.vrc-hourlycal-container .table-responsive td:first-child {
+	border-left: 0;
+}
+.vrc-hourlycal-container .vrctdwarning {
+	background: var(--vrc-orange-color);
+}
+.vrc-hourlycal-container .vrctdbusy {
+	background: var(--vrc-red-color);
+}
+.vrc-hourlycal-rowavail {
+	height: 30px;
+}
+.car_moreimages {
+	overflow: hidden;
+	margin:5px 0 0 0;
+}
+.cardetails_moreimages {
+	width: 100%;
+	overflow: hidden;
+	margin: 5px 0 0 0;
+	display: inline-block;
+}
+.car_moreimages a, .cardetails_moreimages a {
+	display: inline-block;
+}
+.car_moreimages img, .cardetails_moreimages img {
+	padding: 1px;
+	background-color: var(--vrc-white-bg-color);
+}
+.car_moreimages img:hover, .cardetails_moreimages img:hover {
+	opacity:0.7;
+}
+.loginregistercont {
+	display: flex;
+	flex-wrap: wrap;
+}
+.loginregistercont > div {
+	flex: 1;
+	border-radius:4px;
+	padding: 30px;
+	margin: 10px;
+	border: 1px solid var(--vrc-border-color);
+}
+.loginregistercont > div > h4 {
+	color: var(--vrc-dark-grey-bg-color-hover);
+    text-transform: uppercase;
+	padding:10px 0;
+}
+.loginregistercont .vrc-keyvalue-pair {
+	margin: 10px 0; 
+}
+.loginregistercont .vrc-keyvalue-pair .vrc-keyvalue-pair-key {
+	margin-bottom: 3px;
+}
+.loginregistercont .vrc-keyvalue-pair input {
+	width: 100%;
+}
+.vrcdivsearch > form > .vrclocationsbox {
+	flex: 100%;
+	text-align: right;
+	display: inline-block;
+	width: 100%;
+}
+.vrclocationsmapdiv {	
+	font-size: .9em;
+}
+.vrclocationsmapdiv a {
+	background: var(--vrc-grey-bg-color);
+	padding: 30px;
+	color: inherit;
+	border: 2px solid var(--vrc-light-border-color);
+	display: block;
+	text-align: center;
+}
+.vrclocationsmapdiv a:hover {
+	background: var(--vrc-white-bg-color);
+}
+.vrcdivsearch .vrclocationsbox i {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+.vrclocationsmapdiv a {
+	text-decoration: none !important;
+}
+.vrclocationsmapdiv a span {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.vrcdivsearch .vrcsfentrysubmit input.vrcdetbooksubmit, .vrcdivsearch .button {
+	background: none repeat scroll 0 0 var(--vrc-blue-color);
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--vrc-contrast-text-color);
+}
+#vrcmapcanvas {
+	border-radius: 0;
+	margin:0 auto;
+	box-shadow: 0 2px 5px 0px rgba(0,0,0,.1);
+}
+
+.vrcgmapinfow {
+	padding: 3px;
+	color: var(--vrc-dark-grey-bg-color);
+}
+
+.vrcgmapinfowdescr {
+	font-size: .9em;
+}
+
+.vrcgmapinfowdescr p {
+	margin:0;
+	padding:0 0 5px 0;
+}
+
+.vrcgmapinfow h3{
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+/*** custom ***/
+.vrcdivsearch {
+	padding: 15px;
+	background: var(--vrc-input-style-deactive);
+	border: 1px solid var(--vrc-light-border-color);
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrcdivsearch > .vrcdivsearch-inner {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrcdivsearch-inner form {
+	width: 100%;
+}
+.vrcdivsearch .vrclocationsbox {
+	flex-basis: 200px;
+	margin-left: 15px;
+}
+.vrc-searchf-section-locations {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-searchf-section-locations .vrcsfentrycont:first-child, .vrc-searchf-section-datetimes .vrcsfentrycont:first-child {
+	margin-right: 10px;
+}
+.vrcdivsearch .vrcsfentrycont {
+	margin: 0 0 10px 0;
+	flex: 1;
+}
+.vrcdivsearch .vrcsfentrycont > div {
+	display: inline-block;
+	margin: 3px;
+}
+.vrcdivsearch .vrcsfentrycont select, 
+.vrcdivsearch .vrcsfentrycont input {
+	font-size: .9em;
+}
+.vrcsfentrycont .vrcsfentrydate .hasDatepicker {
+	border-radius: 0;
+	padding: 0;
+	height: 32px;
+	float: left;
+	margin: 0 10px 0 0;
+	border: 0;
+	box-shadow: none;
+	font-size: .9em;
+	flex: 1;
+	background: var(--vrc-white-bg-color);
+}
+.vrcsfentrycont .vrcsfentrydate .ui-datepicker-trigger {
+	display: none;
+}
+.vrcsfentryselect select {
+    padding: 0 5px 0;
+    line-height: 1;
+    border:0; 
+    border-radius: 2px;
+    height: 34px;
+    width: auto;
+    background: var(--vrc-white-bg-color);
+    margin-bottom: 0;
+    border: 1px solid var(--vrc-border-color);
+}
+.vrcsfentrycont .vrctimesep {
+	display: inline-block;
+	padding: 0 5px;
+	align-self: center;
+}
+.vrcsfentrycont #vrccomselph select,
+.vrcsfentrycont #vrccomselpm select,
+.vrcsfentrycont #vrccomseldh select,
+.vrcsfentrycont #vrccomseldm select {
+    padding: 0 5px 0;
+    line-height: 1;
+    border:0; 
+    height: 34px;
+    border-radius: 2px;
+    margin-bottom: 0;
+    border: 1px solid var(--vrc-border-color);
+    background: var(--vrc-white-bg-color) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center !important;
+    background-size: 10px 12px !important;
+    appearance: none !important;
+    padding: 0px 1.75rem 0px 0.75rem !important;
+}
+.vrcdivsearch .vrc-searchf-section-datetimes .vrcsfentrycont {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrcdivsearch .vrc-searchf-section-datetimes {
+	display: flex;
+}
+.vrcdivsearch .vrcsfentrycont .vrc-sf-time-container {
+	display: flex;
+}
+.vrcdivsearch .vrcsfentrycont label {
+	margin-bottom: 5px;
+	font-size: .9em;
+	font-weight: normal;
+}
+.vrcdivsearch .vrc-searchf-section-sbmt  {	   
+	align-self: center;
+}
+.vrcdivsearch .vrc-searchf-section-sbmt .vrcsfentrycont {
+	margin-bottom: 0;
+}
+.vrcdivsearch .vrc-searchf-section-sbmt .vrcsfentrysubmit {
+	display: block;
+}
+.vrcdivsearch .vrc-searchf-section-sbmt .vrcsfentrysubmit input {
+	width: 100%;
+}
+.vrcdivsearch .vrc-searchf-section-datetimes .vrcsfentrycont .vrcsfentrylabsel {
+	margin-right: 10px;
+	flex: 1;
+}
+.vrcdivsearch .vrcsfentrycont .vrc-sf-time-container span:not(.vrctimesep) {
+	flex: 1;
+}
+.vrcdivsearch .vrcsfentrycont .vrc-sf-time-container span:not(.vrctimesep) select {
+	width: 100%;
+}
+.vrcdivsearch .vrcsfentrycont label {
+	display: block;
+	margin: 0;
+}
+.vrc-searchf-section-sbmt {
+	display: flex;
+}
+.vrc-searchf-section-sbmt .vrcsfentrycont {
+	margin-top: auto;
+	margin-bottom: 22px;
+}
+.vrcdivsearch .vrcsfentrylabsel .vrcsfentrydate {
+	background: var(--vrc-white-bg-color);
+	padding: 0 10px;
+	color: var(--vrc-dark-grey-bg-color-hover);
+	border-radius: 2px;
+	border: 1px solid var(--vrc-border-color);
+	display: flex;
+}
+.vrcdivsearch .vrcsfentrylabsel .vrcsfentrydate i {
+	margin-top: 8px;
+}
+.vrcdivsearch .vrcsfentrytime > span {
+    display: inline-block;
+    float: left;
+}
+.vrcdivsearch .vrcsfentrycont div {
+	display: inline-block;
+	vertical-align: top;
+}
+.vrcdivsearch .vrcsfentrycont .vrcsfentryselect {
+	display: block;
+}
+.vrcdivsearch .vrcsfentrycont .vrcsfentryselect select {
+	width: 100%;
+}
+.vrcdivsearch form table td select, .vrcdivsearch form table td input {
+	background:var(--vrc-input-style-deactive);
+	border:1px solid var(--vrc-border-color);
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	color:var(--vrc-dark-grey-bg-color-hover);
+	padding:6px !important;
+	line-height:12px;
+	font-family:"Century Gothic", Tahoma, Arial;
+}
+.vrcdivsearch form table td input[type^="submit"] {
+	background:var(--vrc-border-color);
+	border:1px solid var(--vrc-border-color);
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	margin:10px 0 0 0;
+	width:115px;
+	cursor:pointer;
+}
+.vrcdivsearch form table td input[type^="submit"]:hover {
+	background:var(--vrc-border-color);
+}
+.ui-helper-clearfix {
+	z-index:10000 !important;
+}
+.ui-datepicker-trigger {
+	margin:0 0 0 2px;
+}
+.dailyprices {
+	font-size: .9em;
+	line-height:34px;
+}
+.vrcpaymentchangetot {
+	background: var(--vrc-grey-bg-color);
+	border:1px solid var(--vrc-border-color);
+	border-radius:4px;
+	padding:10px;
+	color:var(--vrc-dark-grey-bg-color-hover);
+	display:block;
+	font-size: 1em;
+}
+.vrcpaymentchangetot .vrcorddiffpayment {
+	font-weight:bold;
+	color:var(--vrc-darkblue-color);
+	font-size: 1.1em;
+}
+.vrcoptionforcequant {
+	padding: 6px 10px;
+	border: 1px solid var(--vrc-border-color);
+	border-radius: 4px;
+}
+
+/*** Orders List ***/
+.vrc-orders-list-table-head-row, .vrc-orders-list-table-body .vrc-orders-list-table-row {
+	display: grid;
+	grid-template-columns: 50px 2fr 2fr 1fr 1fr 50px;
+}
+.vrc-orders-list-table-head-row {
+	font-weight: 500;
+}
+.vrc-orders-list-table-body .vrc-orders-list-table-row {
+	border: 1px solid var(--vrc-border-color);
+	box-shadow: 0 1.5px 4px rgba(0,0,0,.08);
+	padding: 10px 20px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	font-size: .9em;
+}
+.vrc-orders-list-table-body-row-confirmed .vrc-orders-list-table-cell-bstatus {
+	color: var(--vrc-green-color);
+}
+.vrc-orders-list-table-body-row-standby .vrc-orders-list-table-cell-bstatus {
+	color: var(--vrc-orange-color);
+}
+.vrc-orders-list-table-body-row-cancelled .vrc-orders-list-table-cell-bstatus {
+	color: var(--vrc-red-color);
+}
+.vrc-orders-list-table-body .vrc-orders-list-table-row .vrc-orders-list-table-cell-lbl {
+	display: none;
+}
+
+p.vrcuserordersparag {
+	font-style: italic;
+	padding: 5px;
+}
+.vrcprintdiv {
+	font-size: 1.1em;
+	text-align: right;
+}
+.vrcprintdiv a img {
+	border: 0;
+}
+.vrcordcancbox {
+	border: 1px solid var(--vrc-light-border-color);
+	padding: 20px;
+	margin-top: 10px;
+	background: var(--vrc-input-style-deactive);
+	box-shadow: 0 3px 3px 0 rgba(50,54,72,.08);
+	border-radius: 6px;
+}
+.vrcordcancbox h3 {
+	margin: 0 0 10px;
+}
+.vrcordcancbox .vrcinput {
+	height: auto;
+	margin: 0 0 5px 0;
+	width: 80%;
+}
+.vrcordcancbox .vrctextarea {
+	width: 80%;
+}
+.vrcordcancbox .vrcordcancform-entry-submit {
+	margin-top: 10px;
+}
+.vrcordcancformbox {
+	display: none;
+}
+.vrcordcancbox #vrcopencancform {
+	display: inline-block;
+	background: var(--vrc-blue-color);
+	color: var(--vrc-contrast-text-color);
+	border-radius: 2px;
+	white-space: break-spaces;
+	padding: 10px 20px;
+}
+.vrcordcancbox #vrcopencancform:hover {
+	background: var(--vrc-blue-color-hover);
+}
+#vrcformcancemail, #vrcformcancreason {
+	padding: 0 5px 0 0;
+}
+.vrcordcancbox .button {
+	margin: 5px 0 0;
+	background: var(--vrc-darkblue-color);
+	color: var(--vrc-contrast-text-color);
+	border-radius: 3px;
+	padding: 10px;
+	border: 0;
+}
+.vrcdownloadpdf {
+	font-weight: bold;
+	margin-top: 10px;
+}
+.vrcdownloadpdf a {
+	text-decoration: none;
+}
+.vrcdownloadpdf i {
+	padding-right: 5px;
+}
+.vrc-car-result-characteristics {
+	margin-top: 5px;
+}
+.vrc-car-result-characteristics .vrccarcarat {
+	display: inline-block;
+	vertical-align: top;
+}
+.vrc-car-result-characteristics .vrccarcarat img {
+	vertical-align: middle;
+	max-width: 20px;
+}
+.vrc-car-result-characteristics .vrccarcarat span {
+	padding: 0 3px;
+	font-size: 11px;
+}
+.vrc-car-result-characteristics .vrccarcarat i {
+	font-size: 16px;
+}
+.vrc-avcals-container {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.vrccaldivcont {
+	border: 2px solid var(--vrc-light-border-color);
+	border-top: 2px solid var(--vrc-darkblue-color);
+    display: inline-block;
+    margin: 0 5px 8px;
+    vertical-align: top;
+	border-radius: 0;
+	padding: 3px 8px 8px;
+    width: calc(33.33% - 14px);
+}
+.vrcsearchconfnumb {
+	border:1px solid var(--vrc-border-color);
+	border-top: 3px solid var(--vrc-light-border-color);
+	padding:10px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+.vrccal {
+	border: 0 none;
+    border-collapse: separate;
+    border-spacing: 2px;
+    box-sizing: inherit;
+    width: 100%;
+}
+.vrccal tr:first-child {
+    font-weight: bold;
+    height: 25px;
+    font-size: .9em;
+}
+.vrccal .vrccaldays td {
+	font-weight: bold;
+	font-size: .9em;
+	text-align: center;
+}
+.vrcconfnumbinp {
+	display: inline-block;
+}
+.vrcconfnumbsubm {
+	display: inline-block;
+}
+.vrcconfnumbinp input {
+	border:1px solid var(--vrc-border-color);
+	border-radius:4px;
+	padding:2px 5px;
+	margin: 0 10px 0 0;
+}
+
+.maxthirty{
+	cursor: pointer;	
+	max-height: 30px;
+	height: expression(this.height > 30 ? "30px" : true);
+	max-width: 30px;
+	width: expression(this.width > 30 ? "30px" : true);
+
+}
+
+/*** Vikrentcar 1.9 ***/
+
+.car_result > .vrc-car-characteristics {
+	width: 100%;
+	display: inline-block;
+	border-top:1px solid var(--vrc-border-color);
+	text-align: right;
+}
+.car_result > .vrc-car-characteristics .vrccarcarat {
+	border-left: 1px solid var(--vrc-border-color);
+	padding: 3px 7px 5px;
+}
+.vrccatdescr {
+	margin-bottom: 15px;
+}
+.vrc-car-result-left {
+	flex-basis: 20%;
+	padding: 10px;
+}
+.vrc-car-result-right {
+	flex: 1;
+}
+.vrc-car-name {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+.vrc-car-name a {
+	text-decoration: none !important;
+}
+.vrccaratsdiv .vrccarcarat {
+	display: inline-block;
+}
+.vrccarcarat > * {
+	margin: 3px;
+	display: inline-block;
+}
+.vrc-carat-cont img {
+	max-height: 100px;
+}
+.vrc-car-result-rightinner-deep {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-car-result-rightinner-deep > * {
+	display: inline-block;
+	vertical-align: top;
+}
+.vrc-car-result-inner {
+    position: relative;
+    flex: 1;
+    padding: 15px;
+}
+.vrc-car-result-inner .vrc-car-category {
+	display: block;
+	text-transform: uppercase;
+	font-size: .9em;
+}
+.vrc-car-lastblock {
+	padding: 20px;
+	text-align: right;
+}
+.vrc-car-bookingbtn {
+	margin: 8px 0 0;
+}
+.vrc-car-bookingbtn form {
+	margin: 0;
+}
+.vrc-car-result-dailycost {
+	margin: 7px 0 0;
+	letter-spacing: -0.4px;
+	color: var(--vrc-blue-color);
+}
+.vrc-perday-txt {
+	font-size: .9em;
+}
+.vrc-car-result-description {
+	margin: 5px 0 0;
+}
+.vrc-car-characteristics {
+	margin-top: 10px;
+}
+.vrcsrowpricediv > * {
+	display: block;
+}
+
+/* Car Result Grid layout */
+.vrc-search-results-block.vrc-search-results-block-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+.vrc-search-results-block.vrc-search-results-block-grid .car_separator {
+    display: none;
+}
+.vrc-search-results-block.vrc-search-results-block-grid .vrc-car-result-left {
+    flex-basis: 100%;
+}
+.vrc-search-results-block.vrc-search-results-block-grid .vrc-car-result-inner {
+    flex-basis: 100%;
+    padding-bottom: 0;
+}
+.vrc-search-results-block.vrc-search-results-block-grid .vrc-car-lastblock {
+    padding: 0 20px 10px;
+    text-align: left;
+    flex-basis: 100%;
+}
+
+.vrc-promotion-block {
+	position: relative;
+	padding: 8px 10px 8px 10px;
+	background: var(--vrc-light-grey-bg-color);
+	border: 1px solid var(--vrc-green-color);
+	margin: 10px 0px 10px 0;
+	display: flex;
+}
+.vrc-promotion-block .vrc-promotion-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+.vrc-promotion-block .vrc-promotion-icon i {
+    width: 34px;
+    height: 34px;
+    line-height: 31px;
+    border: 2px solid var(--vrc-green-color);
+    border-radius: 50%;
+    text-align: center;
+    color: var(--vrc-contrast-text-color);
+    background: var(--vrc-green-color);
+}
+.vrc-promotion-description {
+	color: var(--vrc-dark-grey-bg-color-hover);
+	padding: 0 25px 0 0;
+	align-self: center;
+	font-size: 1.1em;
+}
+.vrc-promotion-block p {
+	margin: 0;
+}
+.vrc-promotion-price {
+	position: relative;
+}
+.car_result .vrc-promotion-price .car_cost {
+	color: var(--vrc-red-color);
+	font-weight: bold;
+	display: block;
+}
+.car_result .vrc-car-result-price-before-discount .car_cost {
+	display: inline-block;
+	color: var(--vrc-dark-grey-bg-color-hover);
+	text-decoration: none;
+	position: relative;
+}
+.car_result .vrc-car-result-price-before-discount .car_cost:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 100%;
+	border-top: 1px solid;
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+.vrcstartfrom {
+	margin: 18px 0 0 0;
+	display: inline-block;
+}
+.vrc-promotion-details {
+	display: inline-block;
+	width: 100%;
+	margin: 10px 0;
+}
+.vrc-promotion-name {
+	color:var(--vrc-blue-color);
+}
+.vrc-promotion-name span {
+	padding: 10px;
+	display: inline-block;
+}
+.vrc-promotion-dates {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+.vrc-promotion-dates-left {
+	display: inline-block;
+	border: 1px solid var(--vrc-border-color);
+	border-radius: 4px;
+	background: var(--vrc-light-grey-bg-color);
+	margin: 0 10px;
+	align-self: flex-end;
+}
+.vrc-promotion-dates-right {
+	display: inline-block;
+	margin: 0 15px 0 auto;
+}
+.vrc-promotion-dates-left > div {
+	display: inline-block;
+	padding: 15px 10px;
+	font-weight: bold;
+}
+.vrc-promotion-dates-left .vrc-promotion-date-label {
+	display: block;
+	text-transform: uppercase;
+	font-size: .9em;
+	font-weight: normal;
+}
+.vrc-promotion-dates-left .vrc-promotion-date-from {
+	margin: 0 20px 0 0;
+}
+.vrc-promotion-date-validuntil {
+	font-size: .9em;
+	padding: 5px 0 3px 0;
+	text-align: right; 
+}
+.vrc-promotion-dates-right .vrc-promotion-date-label {
+	color: inherit;
+}
+.vrc-promotion-date-weekdays {
+	display: inline-block;
+	font-size: .9em;
+}
+.vrc-promotion-date-weekdays > span {
+	padding: 4px 7px;
+	display: inline-block;
+	background: var(--vrc-blue-color);
+	color: var(--vrc-contrast-text-color);
+	border-radius: 4px;
+	margin: 1px;
+}
+.vrc-promotion-cars-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-promotion-car-block {
+	border: 1px solid var(--vrc-light-border-color);
+    background: var(--vrc-light-grey-bg-color);
+    padding: 6px 6px 12px;
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px);
+    border-radius: 6px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-promotion-car-block > * {
+	flex-basis: 100%;
+}
+.vrc-promotion-car-block .vrc-promotion-car-img {
+	text-align: center;
+}
+.vrc-promotion-car-name {
+	font-weight: bold;
+	margin: 10px 10px;
+}
+.vrc-promotion-car-book-block {
+	text-align: center;
+	margin: 0 10px;
+	align-self: end;
+}
+.vrc-promotion-car-book-block a {
+	background: var(--vrc-blue-color);
+	color: var(--vrc-contrast-text-color);
+	width: 100%;
+	display: inline-block;
+	padding: 4px 0;
+	text-transform: uppercase;
+}
+.vrc-promotion-discount {
+	margin: 0px 0 5px;
+	text-align: right;
+}
+.vrc-promotion-discount-details {
+	border: 2px dashed var(--vrc-red-color);
+	color: var(--vrc-red-color);
+	padding: 12px 18px;
+	border-radius: 7px;
+	font-weight: bold;
+	display: inline-block;
+}
+.vrc-promotion-discount-details > span {
+	text-align: center;
+}
+.vrc-promotion-discount-details .vrc-promotion-discount-percent-amount {
+	font-size: 25px;
+}
+.vrc-promotion-discount-details .vrc-promotion-discount-percent-txt {
+	font-size: .9em;
+	margin: 7px 0px 0px;
+}
+.vrc-label-promo-price {
+	position: relative;
+}
+.vrc-cdetails-cost {
+    border-top: 1px solid var(--vrc-light-border-color);
+    margin: 15px 0 10px;
+    padding: 10px 15px;
+    text-align: right;
+    background: var(--vrc-light-grey-bg-color);
+}
+.vrc-cdetails-cinfo {
+	width: 100%;
+	display: inline-block;
+}
+.vrc-car-carats, .vrc-showprc-car-carats {
+    border-bottom: 1px solid var(--vrc-border-color);
+    border-top: 1px solid var(--vrc-border-color);
+    display: inline-block;
+    float: none;
+    margin-top: 10px;
+    padding: 5px 0 0;
+    width: 100%;
+}
+.vrc-car-carats .vrccaratsdiv,
+.vrc-showprc-car-carats .vrccaratsdiv {
+	width: 100%;
+}
+.vrc-car-carats .vrccarcarat,
+.vrc-showprc-car-carats .vrccarcarat {
+	display: inline-block;
+	margin: 0 8px 5px 0;
+}
+.vrc-car-carats .vrccarcarat img,
+.vrc-showprc-car-carats .vrccarcarat img {
+    float: left;
+}
+.vrc-car-carats .vrccarcarat span,
+.vrc-showprc-car-carats .vrccarcarat span {
+    float: left;
+}
+.vrc-cardetails-legend {
+	margin-top: 15px;
+}
+.vrc-showprc-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-showprc-container > div {
+	flex: 1;
+}
+.vrc-showprc-left {
+	order: 1;
+	margin-left: 15px;
+}
+.vrc-showprc-right {
+	order: 0;
+	text-align: left;
+}
+.vrc-showprc-left .vrc-cdetails-infocar {
+	padding: 0 20px 0 0;
+}
+.vrc-showprc-left .car_title {
+	border-bottom: 0;
+}
+.vrc-showprc-right.car_img_box {
+	margin: 0;
+}
+.vrc-cdetails-cmainimg {
+	float: left;
+	margin: 0 20px 0 0;
+}
+.vrc-cdetails-cmainimg img {
+	max-width: 100%;
+}
+.vrc-cdetails-cardesc {
+	margin: 0 0 0 10px;
+	overflow: hidden;
+}
+.vrc-cdetails-cinfo {
+	margin: 0 0 10px 0;
+}
+.vrc-searchfilter-characteristics-container {
+    border: 1px solid var(--vrc-border-color);
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+}
+.vrc-searchfilter-characteristics-list {
+	display: inline-block;
+    padding: 5px;
+}
+.vrc-searchfilter-characteristic {
+	background: none repeat scroll 0 0 var(--vrc-light-grey-bg-color);
+    display: inline-block;
+    margin: 2px;
+    padding: 7px 8px;
+    cursor: pointer;
+}
+.vrc-searchfilter-characteristic:hover, .vrc-searchfilter-characteristic-active {
+	background: var(--vrc-grey-bg-color);
+}
+.vrc-searchfilter-characteristic > * {
+	display: inline-block;
+}
+.vrc-searchfilter-characteristic > .vrc-searchfilter-cicon img {
+	max-width: 24px;
+	margin-right: 2px;
+}
+.vrc-searchfilter-cinput input {
+	margin: 0 5px 0 0 !important;
+}
+.vrc-searchfilter-cname {
+	font-size: .9em;
+}
+.vrc-searchfilter-cquantity {
+	font-size: .8em;
+	color: var(--vrc-dark-grey-bg-color-hover);
+}
+.vrc-pagination {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin: 5px 0;
+}
+.vrc-pagination .pagination-list {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.vrc-pagination .pagination-list li {
+	display: inline-block;
+}
+.vrc-pagination .pagination-list li a {
+	padding: 4px;
+	background: var(--vrc-grey-bg-color);
+	font-size: .9em;
+	color: var(--vrc-dark-grey-bg-color-hover);
+	margin: 0 2px;
+}
+.vrc-pagination .pagination-list .disabled a {
+	color: var(--vrc-light-text-color);
+}
+.vrc-pagination .pagination-list li a:hover {
+	color: var(--vrc-dark-grey-bg-color);
+}
+.vrc-pagination .pagination-list li.active a {
+	background: var(--vrc-border-color);
+}
+.vrc-pagination {
+	display: inline-block;
+	width: 100%;
+}
+.vrc-pagination ul {
+	text-align: center;
+}
+.vrc-pagination ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 3px;
+}
+.vrc-pagination ul li .pagenav {
+	display: inline-block;
+	padding: 3px 5px;
+}
+.vrc-pagination ul li a.pagenav {
+	background: var(--vrc-grey-bg-color);
+	border:1px solid var(--vrc-border-color);
+	color: var(--vrc-dark-grey-bg-color-hover);
+}
+.vrc-pagination ul li a.pagenav:hover {
+	background: var(--vrc-border-color);
+	text-decoration: none;
+}
+.vrc-pagination ul li span.pagenav {
+	background: var(--vrc-light-grey-bg-color);
+	border:1px solid var(--vrc-border-color);
+}
+
+/*** Vik Rent Car 1.12 ***/
+.vrcstepsbarcont .vrc-stepbar {
+	width: 100%;
+	margin: 0 0 30px 0;
+	padding: 0;
+	display: flex;
+	border: 1px solid var(--vrc-border-color);
+	background: var(--vrc-white-bg-color);
+	list-style: none;
+	counter-reset: item;
+	box-sizing: border-box;
+}
+.vrcstepsbarcont .vrc-stepbar > li {
+	flex: 1;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 25px;
+	text-align: center;
+	position: relative;
+}
+.vrcstepsbarcont .vrc-stepbar > li > * {
+	counter-increment: item;
+	position: relative;
+	display: block;
+	font-size: .8em;
+}
+.vrcstepsbarcont .vrc-stepbar > li > *:before {
+	margin-right: 10px;
+	content: counter(item);
+	border-radius: 50%;
+	color: var(--vrc-dark-grey-bg-color-hover);
+	border: 2px solid var(--vrc-dark-grey-bg-color-hover);
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	display: inline-block;
+	font-size: .9em;
+	font-weight: bold;
+	box-sizing: content-box;
+	font-family: "Tahoma", Arial, sans-serif;
+}
+.vrcstepsbarcont .vrc-stepbar li.vrc-step-complete > *:before {
+	color: var(--vrc-blue-color);
+	border: 2px solid var(--vrc-blue-color);
+}
+.vrcstepsbarcont .vrc-stepbar li.vrc-step-complete > *:hover:before {
+	background: var(--vrc-blue-color);
+	color: var(--vrc-contrast-text-color);
+}
+.vrcstepsbarcont .vrc-stepbar li.vrc-step-current > *:before {
+	color: var(--vrc-contrast-text-color);
+	background: var(--vrc-blue-color);
+	border: 2px solid var(--vrc-blue-color);
+}
+.vrcstepsbarcont .vrc-stepbar li:after, .vrcstepsbarcont .vrc-stepbar li:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 1;
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 16px solid transparent;
+	border-left-color: transparent;
+}
+.vrcstepsbarcont .vrc-stepbar li:before {
+	margin-left: 1px;
+	border-left-color: var(--vrc-border-color);
+}
+.vrcstepsbarcont .vrc-stepbar li:after {
+	border-left-color: var(--vrc-contrast-text-color);
+}
+.vrcstepsbarcont .vrc-stepbar li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--vrc-dark-grey-bg-color-hover);
+}
+.vrcstepsbarcont .vrc-stepbar li a:hover {
+	color: var(--vrc-blue-color);
+}
+.vrcstepsbarcont .vrc-stepbar li a:hover {
+	background: transparent;
+}
+.vrc-itinerary-summary {
+	border: 1px solid var(--vrc-border-color);
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.vrc-itinerary-summary > div {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px;
+	flex: 1;
+}
+.vrc-itinerary-summary > div > h4 {
+	margin-bottom: 5px;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .9em;
+}
+.vrc-itinerary-summary > div > div {
+	display: flex;
+}
+.vrc-itinerary-summary > div > div .vrc-itinerary-pickup-date-time, .vrc-itinerary-summary > div > div .vrc-itinerary-dropoff-date-time {
+	margin-left: 5px;
+}
+.vrc-itinerary-summary .vrc-itinerary-pickup {
+	border-right: 1px solid var(--vrc-border-color);
+}
+.vrc-itinerary-summary .vrc-itinerary-pickup-locdet, .vrc-itinerary-summary .vrc-itinerary-dropfff-locdet {
+	display: inline-block;
+	vertical-align: top;
+}
+.vrc-itinerary-summary .vrc-itinerary-pickup-locdet .vrc-itinerary-pickup-locaddr, .vrc-itinerary-summary .vrc-itinerary-dropfff-locdet .vrc-itinerary-dropoff-locaddr {
+	display: block;
+	font-size: .9em;
+}
+.vrc-itinerary-summary i {
+	color: var(--vrc-dark-grey-bg-color-hover);
+	margin-top: 6px;
+	margin-right: 8px;
+	font-size: 14px;
+}
+.vrc-itinerary-duration {
+	font-weight: bold;
+	margin-left: 5px;
+	font-style: italic;
+	color: var(--vrc-dark-grey-bg-color-hover);
+}
+.vrc-oconfirm-middlep {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.vrc-oconfirm-middlep > div {
+	flex: 1;
+}
+.vrc-enterpin-top > span > span {
+	font-weight: bold;
+}
+.vrc-enterpin-top .vrc-pincode-sbmt {
+	background: var(--vrc-blue-color);
+	border: 1px solid var(--vrc-blue-color);
+	border-radius: 5px;
+	color: var(--vrc-contrast-text-color);
+	cursor: pointer;
+	padding: 10px 14px;
+	margin: 0 0 0 5px;
+	width: auto;
+	vertical-align: top;
+}
+/* Request information - Start */
+.vrc-reqinfo-opener {
+	display: inline-block;
+	padding:5px 10px;
+	border-radius: 3px;
+	background: var(--vrc-grey-bg-color);
+	color: var(--vrc-contrast-text-color);
+	font-weight: 400;
+	transition: all 400ms ease-in-out
+}
+.vrc-reqinfo-opener:hover {
+	background: var(--vrc-grey-bg-color);
+	transition: all 400ms ease-in-out;
+	color:var(--vrc-contrast-text-color);
+}
+#vrcdialog-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom:0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+a.vrcdialog-overlay-close {
+	display: block;
+	height: 100%;
+	cursor: default;
+}
+.vrcdialog-inner {
+	width: 40%;
+	height: auto;
+	max-height: 50%;
+	position: fixed;
+	left: 30%;
+	top: 25%;
+	overflow-y: scroll;
+	padding: 5px;
+	background: var(--vrc-white-bg-color);
+	z-index: 9999;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .5);
+}
+.vrcdialog-left, .vrcdialog-right {
+	display: inline-block;
+	vertical-align: top;
+}
+.vrcdialog-left {
+	width: 40%;
+}
+.vrcdialog-right {
+	width: 58%;
+	text-align: center;
+	padding: 0 15px;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, 56%);
+}
+.vrcdialog-right:after {
+	background: none repeat scroll 0 0 var(--vrc-green-color);
+	border: 4px solid var(--vrc-white-bg-color);
+	border-radius: 50%;
+	color: var(--vrc-contrast-text-color);
+	content: "\2713";
+	font-size: 22px;
+	font-weight: bold;
+	height: 37px;
+	line-height: 24px;
+	padding: 0 0 0 1px;
+	position: absolute;
+	left: 50%;
+	top: -21px;
+	transform: translate(-50%, -50%);
+	width: 37px;
+}
+.vrcdialog-left #vrcdialogrimage {
+	width: auto;
+	max-width: 100%;
+	margin-top: 0;
+}
+.vrcdialog-reqinfo {
+	width: 70%;
+	height: auto;
+	max-height: 70%;
+	min-height: 50%;
+	position: fixed;
+	left: 15%;
+	top: 15%;
+	overflow-y: scroll;
+	padding: 25px;
+	background: var(--vrc-white-bg-color);
+	z-index: 1000;
+	border-radius: 2px;
+	box-shadow: 0 0 5px 0 var(--vrc-text-color);
+}
+.vrcdialog-inner > h3 {
+	color: var(--vrc-dark-grey-bg-color-hover);
+	font-weight: 300;
+	border-bottom:1px solid var(--vrc-border-color);
+	margin: 0 0 15px 0;
+	padding: 0 0 5px;
+}
+.vrcdialog-reqinfo label {
+	display: block;
+	margin: 0 0 5px;
+}
+.vrcdialog-reqinfo input {
+	font-family: inherit;
+	color: var(--vrc-dark-grey-bg-color-hover);
+	padding: .6rem .8rem;
+	border: 1px solid var(--vrc-border-color);
+	background: var(--vrc-white-bg-color);
+	margin: 0;
+	width: 200px;
+	border-radius: .4rem;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+}
+.vrcdialog-reqinfo textarea {
+	font-family: inherit;
+	color: var(--vrc-dark-grey-bg-color-hover);
+	padding: .6rem .8rem;
+	border: 1px solid var(--vrc-border-color);
+	background: var(--vrc-white-bg-color);
+	margin: 0;
+	width: 40%;
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+}
+.vrcdialog-reqinfo button.btn {
+	background: var(--vrc-blue-color);
+	color: var(--vrc-contrast-text-color);
+	border:0;
+	padding: 10px 15px;
+	margin: 5px 0 0;
+}
+.vrcdialog-reqinfo-formentry {
+	margin: 0 0 5px;
+}
+#vrcdialogrimage {
+	text-align: center;
+	width: 250px;
+	height: auto;
+	margin: 10px 0 0;
+}
+.vrcdialog-intro {
+	display: block;
+	text-transform: uppercase;
+	font-size: .9em;
+}
+.vrcdialogrname {
+	color: var(--vrc-darkblue-color);
+	display: inline-block;
+	font-size: 1.1em;
+	margin-bottom: 15px;
+}
+.vrcdialog-bottom {
+	display: block;
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+.vrcdialog-bottom button {
+	margin-right: 5px;
+}
+/* Request information - End */
+
+/* Tooltip Charateristics */
+[data-vrc-expl] {
+	position: relative;
+	cursor: pointer;
+}
+[data-vrc-expl]:before,
+[data-vrc-expl]:after {
+	position: absolute;
+	visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	-webkit-transition:
+		opacity 0.2s ease-in-out,
+		visibility 0.2s ease-in-out,
+		-webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	-moz-transition:
+		opacity 0.2s ease-in-out,
+		visibility 0.2s ease-in-out,
+		-moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	transition:
+		opacity 0.2s ease-in-out,
+		visibility 0.2s ease-in-out,
+		transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	pointer-events: none;
+}
+
+/* Show the entire tooltip on hover and focus */
+[data-vrc-expl]:hover:before,
+[data-vrc-expl]:hover:after,
+[data-vrc-expl]:focus:before,
+[data-vrc-expl]:focus:after {
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
+
+/* Base styles for the tooltip's directional arrow */
+[data-vrc-expl]:before {
+	z-index: 10001;
+	border: 6px solid transparent;
+	background: transparent;
+	content: "";
+}
+[data-vrc-expl]::after {
+	margin-left: -70px;
+}
+
+/* Base styles for the tooltip's content area */
+[data-vrc-expl]:after {
+	text-align: center;
+	z-index: 10000;
+	padding: 8px;
+	width: 160px;
+	background-color: var(--vrc-dark-grey-bg-color);
+	background-color: hsla(0, 0%, 20%, 0.9);
+	color: var(--vrc-contrast-text-color);
+	content: attr(data-vrc-expl);
+	font-size: 12px;
+	line-height: 1.2;
+}
+/* Bottom */
+.vrc-expl:before,
+.vrc-expl:after {
+	top: 100%;
+	bottom: auto;
+	left: 34%;
+}
+
+[data-vrc-expl]::before {
+	margin-top: -12px;
+	margin-bottom: 0;
+	border-top-color: transparent;
+	border-bottom-color: var(--vrc-dark-grey-bg-color);
+	border-bottom-color: hsla(0, 0%, 20%, 0.9);
+}
+
+.vrc-expl:hover:before,
+.vrc-expl:hover:after,
+.vrc-expl:focus:before,
+.vrc-expl:focus:after {
+	-webkit-transform: translateY(12px);
+	-moz-transform: translateY(12px);
+	transform: translateY(12px); 
+}
+
+/* Tooltip Charateristics - End */
+/* Font-Icons Characteristics */
+.vrc-icn-carat {
+	font-size: 22px;
+	color: var(--vrc-dark-grey-bg-color-hover);
+}
+
+/*** Credit Card layout ***/
+.vrc-cdetails-cinfo {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-cdetails-cinfo > div {
+	flex: 1;
+}
+.vrc-cdetails-cardesc {
+	margin-left: 0;
+}
+.vrc-cdetails-cgroup .vrclistcarname {
+	padding-bottom: 0;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+/*** ---------------- ***/
+
+/*** Availability Overview ***/
+.vrc-availability-controls {
+    margin: 10px 0 30px;
+}
+.vrc-availability-controls select {
+    background: var(--vrc-white-bg-color);
+    border: 1px solid var(--vrc-border-color);
+    padding: 6px;
+}
+.vrc-availability-controls .vrclegendediv {
+    margin: 15px 0 0;
+}
+.vrc-availability-wrapper {
+    margin: 20px 0 0;
+}
+.vrc-availability-car-container {
+    margin: 30px 0 0;
+    border-top: 1px solid var(--vrc-light-border-color);
+    border-bottom: 1px solid var(--vrc-light-border-color);
+}
+.vrc-availability-car-details {
+    display: inline-block;
+    width: 100%;
+}
+.vrc-availability-car-details-first {
+    border-right: 2px solid var(--vrc-border-color);
+    display: inline-block;
+    min-height: 162px;
+    position: relative;
+    width: 80%;
+}
+.vrc-availability-car-details-left, .vrc-availability-car-details-right {
+    display: inline-block;
+}
+.vrc-availability-car-details-left {
+	margin: 0 20px 0 0;
+	width: 25%;
+}
+.vrc-availability-car-details .vrc-availability-car-details-left img {
+    margin: 0 15px 0 0;
+    width: 100%;
+}
+.vrc-availability-car-details-right {
+    width: 70%;
+}
+.vrc-availability-car-details h4 {
+    display: block;
+    padding: 0;
+    margin: 10px 0;
+}
+.vrc-availability-car-details-descr {
+    display: block;
+    margin: 5px 0 0;
+}
+.vrc-availability-car-details .car_carats {
+    padding: 8px 0 8px 0px;
+}
+.vrc-availability-car-details-last {
+	border-left: 2px solid var(--vrc-border-color);
+	float: right;
+	left: -2px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 20%;
+}
+.vrc-availability-car-details-last-inner {
+    margin: 50px auto 0;
+    width: 80%;
+}
+.vrc-availability-car-details-last-pickup {
+    display: none;
+    margin: 20px 0 0;
+    color: var(--vrc-dark-grey-bg-color);
+    text-align: center;
+}
+.vrc-availability-car-details-last-pickup i {
+    width: 28px;
+    height: 28px;
+    background: var(--vrc-dark-grey-bg-color);
+    color: var(--vrc-contrast-text-color);
+    line-height: 28px;
+    border-radius: 50%;
+    padding: 0px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.vrc-availability-car-details-last-pickup span {
+    font-size: .9em;
+    font-weight: bold;
+    margin: 0 9px 0 0;
+    padding: 15px 0 15px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.vrc-availability-car-monthcal {
+    margin: 0;
+}
+.vrc-availability-car-monthcal table {
+    margin-bottom: 0;
+}
+.vrc-availability-car-avdays td {
+    text-align: center;
+    position: relative;
+    height: 30px;
+    padding: 8px !important;
+}
+.vrc-availability-month-name {
+    background: var(--vrc-light-grey-bg-color);
+    color: var(--vrc-dark-grey-bg-color);
+}
+.vrc-availability-month-day {
+    text-align: center;
+}
+.vrc-availability-month-day {
+    text-align: center;
+}
+.vrc-availability-weekday {
+    font-size: .9em;
+}
+.vrc-availability-car-avdays .vrc-gav-cell {
+	cursor: pointer;
+}
+.vrc-availability-car-avdays .vrc-free-cell {
+    background: var(--vrc-input-style-deactive);
+    transition: all 400ms ease-in-out 0s;
+    -moz-transition: all 400ms ease-in-out 0s;
+    -webkit-transition: all 400ms ease-in-out 0s;
+}
+.vrc-availability-car-avdays td::after {
+    content: "";
+    background: var(--vrc-white-bg-color);
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.vrc-availability-car-avdays .vrc-occupied-cell {
+    background: var(--vrc-red-color);
+    color: var(--vrc-contrast-text-color);
+}
+.vrc-availability-car-avdays .vrc-partially-cell {
+    background: var(--vrc-orange-color);
+    transition: all 400ms ease-in-out 0s;
+    -moz-transition: all 400ms ease-in-out 0s;
+    -webkit-transition: all 400ms ease-in-out 0s;
+    color: var(--vrc-contrast-text-color);
+}
+.vrc-availability-car-avdays .vrc-free-cell:hover, .vrc-free-cell.vrc-cell-selected-arrival {
+    background: var(--vrc-grey-bg-color);
+    transition: all 400ms ease-in-out 0s;
+    -moz-transition: all 400ms ease-in-out 0s;
+    -webkit-transition: all 400ms ease-in-out 0s;
+}
+.vrc-closure-cell.vrc-cell-selected-arrival, .vrc-closure-cell:hover {
+	background: var(--vrc-red-color);
+}
+.vrc-availability-car-avdays .vrc-partially-cell {
+    color: var(--vrc-contrast-text-color);
+    cursor: pointer;
+}
+.vrc-availability-car-avdays .vrc-occupied-cell {
+    color: var(--vrc-contrast-text-color);
+    border-top: 1px solid var(--vrc-border-color) !important;
+}
+.vrc-availability-car-hours td {
+	position: relative;
+	border-top: 1px solid var(--vrc-border-color);
+}
+.vrc-availability-car-hours td::after {
+    content: "";
+    background: var(--vrc-white-bg-color);
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.vrc-availability-car-hours .vrc-availability-car-hours-time-name {
+	background: var(--vrc-light-grey-bg-color);
+	color: var(--vrc-dark-grey-bg-color);
+	font-size: .9em;
+	text-align: left;
+}
+.vrc-availability-car-hours .vrc-availability-car-hours-time-val {
+	line-height: 1.1em;
+	height: 10px;
+	font-size: .9em;
+}
+.vrc-availability-car-hours-av-free {
+	background: var(--vrc-input-style-deactive);
+	transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-webkit-transition: all 400ms ease-in-out 0s;
+}
+.vrc-availability-car-hours-av-warning {
+	background: var(--vrc-orange-color);
+	color: var(--vrc-contrast-text-color);
+}
+.vrc-availability-car-hours-av-busy {
+	background: var(--vrc-red-color);
+	color: var(--vrc-contrast-text-color);
+}
+.vrc-availability-car-hours td {
+	text-align: center;
+}
+.vrc-availability-car-details-last-inner > .btn {
+	width: 100%;
+}
+.vrc-availability-car-avdays .vrc-gav-cell {
+	cursor: pointer;
+}
+.vrc-availability-car-monthdays td {
+	border-top: 1px solid var(--vrc-border-color) !important;
+}
+.vrc-partially-cell.vrc-cell-selected-arrival, .vrc-partially-cell:hover {
+	background: var(--vbo-orange-color);
+}
+
+/* Search Suggestion */
+.vrc-searchsuggestions-wrap {
+	margin-top: 20px;
+}
+.vrc-searchsuggestions-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-searchsuggestions-list .vrc-searchsuggestions-solution {
+	flex-basis: calc(50% - 30px);
+	text-align: center;
+	margin: 15px 15px 20px;
+	border-radius: 4px;
+	border: 1px solid var(--vrc-border-color);
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.vrc-searchsuggestions-solution-dates {
+	border-bottom: 1px solid var(--vrc-border-color);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+}
+.vrc-searchsuggestions-solution-dates > span {
+	padding: 10px 5px;
+	flex: 1;
+}
+.vrc-searchsuggestions-solution-dates-from {
+    border-right: 1px solid var(--vrc-border-color);
+    margin-right: 5px;
+}
+.vrc-searchsuggestions-solution-dates > span i {
+	margin-right: 5px;
+}
+.vrc-searchsuggestions-solution-locations {
+	padding: 15px 10px;
+}
+.vrc-searchsuggestions-solution-locations > div {
+	display: inline-block;
+}
+.vrc-searchsuggestions-solution-booknow {
+	position: relative;
+	margin-bottom: -18px;
+}
+
+/* New summary table */
+.vrc-oconfirm-summary-container {
+	margin-bottom: 40px;
+}
+.vrc-oconfirm-summary-car-wrapper > div > div, .vrc-oconfirm-summary-total-wrapper > div > div {
+	display: inline-block;
+	vertical-align: top;
+	padding: 7px 10px;
+	line-height: 1em;
+}
+.vrc-oconfirm-summary-car-cell-descr {
+	width: 50%;
+}
+.vrc-oconfirm-summary-car-cell-guests {
+	width: 20%;
+}
+.vrc-oconfirm-summary-car-cell-days {
+	width: 10%;
+	text-align: center;
+}
+.vrc-oconfirm-summary-car-cell-net {
+	width: 15%;
+	text-align: center;
+}
+.vrc-oconfirm-summary-car-cell-tax {
+	width: 10%;
+	text-align: center;
+}
+.vrc-oconfirm-summary-car-cell-tot {
+	width: 15%;
+	text-align: right;
+}
+.vrc-oconfirm-summary-total-head, .vrc-oconfirm-summary-car-row .vrc-oconfirm-summary-car-head-cell {
+	display: none;
+}
+.vrc-oconfirm-summary-car-wrapper {
+	margin: 0 0 15px;
+	padding: 20px;
+	border: 1px solid var(--vrc-border-color);
+	border-radius: 8px;
+	border-top: 3px solid var(--vrc-light-border-color);
+}
+.vrc-oconfirm-summary-car-head {
+	display: flex;
+}
+.vrc-oconfirm-summary-car-head-cell {
+	font-size: .9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--vrc-dark-grey-bg-color);
+	margin-bottom: 5px;
+}
+.vrc-oconfirm-summary-car-row {
+	margin: 5px 0;
+	display: flex;
+}
+.vrc-oconfirm-summary-container {
+	margin-top: 25px;
+}
+.vrc-oconfirm-summary-total-wrapper {
+	padding: 10px 20px;
+	border: 1px solid var(--vrc-border-color);
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0,0,0,.05);
+	border-top: 3px solid var(--vrc-light-border-color);
+}
+.vrc-oconfirm-summary-total-wrapper .vrc-oconfirm-summary-total-row, 
+.vrc-oconfirm-summary-total-wrapper .vrc-oconfirm-summary-total-row .vrc-oconfirm-total-block {
+	font-weight: bold;	
+}
+.vrc-oconfirm-summary-total-wrapper .vrc-oconfirm-summary-total-row > div {
+	font-size: 1.1em;
+}
+.vrc-oconfirm-summary-total-wrapper .vrc-oconfirm-summary-total-row > .vrc-oconfirm-summary-car-cell-net,
+.vrc-oconfirm-summary-total-wrapper .vrc-oconfirm-summary-total-row > .vrc-oconfirm-summary-car-cell-tax {
+	font-size: 1em;
+	font-weight: normal;
+}
+.vrc-oconfirm-summary-total-wrapper .vrc-oconfirm-summary-total-row .vrc-oconfirm-summary-car-cell-tot {
+	margin-left: auto;
+}
+.vrc-oconfirm-summary-coupon-row {
+	font-size: .9em;
+	color: var(--vrc-green-color);
+}
+.vrc-oconfirm-summary-coupon-newtot-row {
+	border-top: 1px solid var(--vrc-border-color);
+	padding-top: 5px;
+	margin-top: 5px;
+}
+.vrc-oconfirm-summary-coupon-newtot-row .vrc-oconfirm-summary-car-cell-tot {
+	font-weight: bold;
+}
+.vrc-oconfirm-summary-total-wrapper .vrcrdrowtotal-positive > .vrc-oconfirm-total-block, .vrc-oconfirm-summary-total-wrapper .vrcrdrowtotal-negative > .vrc-oconfirm-total-block, .vrcrdrowtotal-positive .vrc-oconfirm-summary-car-cell-tot,
+.vrcrdrowtotal-negative > .vrc-oconfirm-total-block, .vrc-oconfirm-previoustotal-block, .vrc-oconfirm-summary-car-cell-tot .vrcrdrowtotal-prevtot, .vrc-oconfirm-summary-total-wrapper
+.vrcrdrowtotal-prevtot > .vrc-oconfirm-summary-car-cell-tot, .vrc-oconfirm-summary-total-wrapper .vrcrdrowtotal-negative > .vrc-oconfirm-summary-car-cell-descr, .vrc-oconfirm-summary-total-wrapper .vrcrdrowtotal-positive > .vrc-oconfirm-summary-car-cell-descr, .vrc-oconfirm-summary-total-wrapper .vrcrdrowtotal-negative > .vrc-oconfirm-summary-car-cell-tot, .vrc-oconfirm-summary-total-wrapper .vrcrdrowtotal-positive > .vrc-oconfirm-summary-car-cell-tot {
+	font-size: 13px;
+}
+.vrc-oconfirm-summary-car-cell-descr .vrc-oconfirm-carname {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	margin-bottom: 5px;
+}
+.vrc-oconfirm-summary-car-cell-descr .vrc-oconfirm-priceinfo {
+    font-size: .8em;
+    margin: 3px 0 0;
+}
+.vrc-oconfirm-summary-option-row, .vrc-oconfirm-summary-fee-row {
+	font-size: .9em;
+}
+.vrc-oconfirm-summary-car-row {
+	border-bottom: 1px solid var(--vrc-light-border-color);
+	padding-bottom: 5px;
+}
+.vrc-oconfirm-summary-car-row:last-child, .vrc-oconfirm-summary-option-row {
+	border: 0;
+}
+.vrc-oconfirm-summary-car-wrapper-notaxes .vrc-hide-tax, .vrc-oconfirm-summary-total-wrapper-notaxes .vrc-hide-tax {
+	display: none;
+}
+.vrc-oconfirm-summary-car-wrapper-notaxes .vrc-oconfirm-summary-car-cell-descr, .vrc-oconfirm-summary-total-wrapper-notaxes .vrc-oconfirm-summary-car-cell-descr  {
+	width: 46%;
+}
+.vrc-oconfirm-summary-car-wrapper-notaxes .vrc-oconfirm-summary-car-cell-tot, .vrc-oconfirm-summary-total-wrapper-notaxes .vrc-oconfirm-summary-car-cell-tot {
+	width: 23%;
+}
+.vrc-oconfirm-summary-total-head, .vrc-oconfirm-summary-car-row .vrc-oconfirm-summary-car-head-cell {
+    display: none;
+}
+.vrc-oconfirm-total-block {
+	text-transform: uppercase;
+}
+
+/* New order detail page */
+.vrc-order-details-top-order {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-order-details-top-order > div {
+	flex: 1;
+}
+.vrc-order-details-top-order > div, .vrc-order-details-top-car {	
+	margin: 5px;
+	padding: 24px;
+	border-radius: 6px;
+	border: 1px solid var(--vrc-border-color);
+	/*box-shadow: 0 3px 3px 0 rgba(50,54,72,.08);*/
+}
+.vrc-order-details-top-car {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-order-details-top-car .vrc-order-details-car-info {
+	display: inline-block;
+	margin-left: auto;
+	order: 1;
+}
+.vrc-order-details-top-car .vrc-order-details-summary {
+	order: 0;
+	margin-right: 15px;
+}
+.vrc-order-details-top-order > div .vrc-order-details-info-key, .vrc-order-details-top-car .vrc-order-details-summary-key {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: .9em;
+	display: block;
+}
+.vrc-order-details-top-wrap .vrcvordudatatitle {
+	margin-bottom: 9px;
+	display: block;
+	border-bottom: 1px solid var(--vrc-border-color);
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	color: var(--vrc-light-text-color);
+}
+.vrc-order-details-top-wrap .vrc-order-details-info-inner, .vrc-order-details-top-car .vrc-order-details-summary-entry {
+	margin: 12px 0;
+}
+.vrc-order-details-car-photo img {
+	border-radius: 4px;
+	margin-bottom: 10px;
+	max-width: 400px;
+}
+.vrc-order-details-costs-wrap {
+	margin: 10px 5px 5px;
+	padding: 24px;
+	border-radius: 8px;
+	border: 1px solid var(--vrc-border-color);
+	border-top: 3px solid var(--vrc-light-border-color);
+}
+.vrc-order-details-costs-wrap .vrc-order-details-costs-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 5px;
+}
+.vrc-order-details-costs-wrap .vrc-order-details-costs-row:last-child {
+	margin-bottom: 0;
+}
+.vrc-order-details-costs-wrap .vrc-order-details-costs-row .vrc-order-details-costs-price {
+	margin-left: auto;
+}
+.vrc-order-details-costs-wrap .vrc-order-details-costs-row .vrc-order-details-costs-name {
+	margin-right: 15px;
+}
+.vrc-order-details-costs-wrap .vrc-order-details-costs-row-total {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.vrc-order-details-costs-wrap .vrc-order-details-costs-row-totalpaid, .vrc-order-details-costs-wrap .vrc-order-details-costs-row-remainingbalance {
+	font-size: 1em;
+}
+.vrc-order-details-costs-wrap .vrc-order-details-costs-row:last-child {
+	border-top: 1px solid var(--vrc-light-border-color);
+	padding-top: 5px;
+	margin-top: 5px;
+}
+.vrc-order-details-costs-wrap .vrc-order-details-costs-row:only-child {
+	border-top: 0;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+/* Pagination */
+.vrc-pagination-footer {
+	margin-top: 30px;
+}
+.vrc-pagination-footer .tablenav .pagination-links > * {
+	border: 1px solid var(--vrc-border-color);
+	background: var(--vrc-white-bg-color);
+	padding: 5px 10px;
+	border-radius: 4px;
+	margin: 0 2px;
+}
+.vrc-pagination-footer .tablenav .pagination-links > a {
+	font-weight: bold;
+	color: var(--vrc-blue-color);
+}
+.vrc-pagination-footer .tablenav .pagination-links > span.disabled {	
+	border: 1px solid var(--vrc-border-color);
+	background: var(--vrc-light-grey-bg-color);
+	cursor: default;
+}
+.vrc-pagination-footer .tablenav #table-paging {
+	border: 0;
+}
+.vrc-pagination-footer .tablenav .pagination-links > a:hover {
+	border-color: var(--vrc-blue-color);
+	color: var(--vrc-blue-color);
+}
+
+.vrc-oconfirm-footer {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrc-oconfirm-footer .vrc-save-order-block {
+	margin-left: auto;
+} 
+.vrc-oconfirm-footer .booknow {
+	margin-top: 0;
+}
+
+/* Pre Check-in */
+.vrc-docsupload-upload-progress-wrap {
+	border: 1px solid var(--vrc-light-border-color);
+	background: var(--vrc-white-bg-color);
+	border-radius: 2px;
+	margin-top: 4px;
+	flex: 1;
+	align-self: center;
+	margin-left: 10px;
+}
+.vrc-docsupload-upload-progress-wrap .vrc-docsupload-upload-progress {
+	background: var(--vrc-blue-color);
+	color: var(--vrc-contrast-text-color);
+	border-radius: 2px;
+	font-size: 11px;
+	padding: 0 5px;
+	width: 1%;
+}
+.vrc-docsupload-upload-container {
+	display: flex;
+}
+.vrc-docsupload-upload-container .vrc-docsupload-uploadfile i {
+	margin-right: 5px;
+}
+.vrc-docsupload-files {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -5px;
+	margin-right: 5px;
+}
+.vrc-docsupload-files .vrc-docsupload-file-uploaded {
+	width: 110px;
+	border: 1px solid var(--vrc-border-color);
+	background-color: var(--vrc-white-bg-color);
+	border-radius: 4px;
+	text-align: center;
+	margin: 5px;
+	padding: 3px;
+	position: relative;
+}
+.vrc-docsupload-files .vrc-docsupload-file-uploaded-rm {
+	position: absolute;
+	top: -9px;
+	right: -6px;
+	border-radius: 50%;
+	border: 1px solid var(--vrc-white-bg-color);
+	cursor: pointer;
+}
+.vrc-docsupload-files .vrc-docsupload-file-uploaded-rm:hover {
+	color: var(--vrc-red-color);
+}
+.vrc-docsupload-file-uploaded > a {
+	color: var(--vrc-dark-grey-bg-color-hover);
+	text-decoration: none;
+	display: block;
+	line-height: 1em;
+	padding: 6px 3px;
+}
+.vrc-docsupload-file-uploaded > a > span {
+	width: 90px;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 13px;
+	white-space: nowrap;
+}
+.vrc-docsupload-file-uploaded > a i {
+	font-size: 18px;
+}
+.vrc-docsupload-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 0;
+}
+.vrc-docsupload-wrap > div {
+	flex: 1;
+	margin: 5px;
+	padding: 24px;
+	border-radius: 6px;
+	border: 1px solid var(--vrc-border-color);
+}
+.vrc-docsupload-wrap .vrcvordudatatitle {
+	margin-bottom: 9px;
+	display: block;
+	border-bottom: 1px solid var(--vrc-border-color);
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	color: var(--vrc-light-text-color);
+}
+.vrc-docsupload-wrap .vrc-order-details-info-inner {
+	margin: 12px 0;
+}
+.vrc-docsupload-wrap .vrc-order-details-info-inner .vrc-order-details-info-key {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: .9em;
+	display: block;
+}
+.vrc-docsupload-field-comments {
+	margin-top: 10px;
+}
+.vrc-docsupload-field-comments .vrc-docsupload-field-key {
+	display: block;
+}
+.vrc-docsupload-field-comments .vrc-docsupload-field-input {
+	display: block;
+}
+.vrc-docsupload-field-comments .vrc-docsupload-field-input textarea {
+	width: 100%;
+	max-height: 150px;
+}
+
+.vrc-oconfirm-choosedeposit {
+	display: inline-block;
+	width: 100%;
+	margin-top: 17px;
+	border-top: 2px dashed var(--vrc-light-border-color);
+	padding-bottom: 15px;
+	padding-top: 20px;
+}
+.vrc-oconfirm-choosedeposit-inner > div {
+	display: inline-block;
+	padding: 15px 10px;
+	border: 2px solid var(--vrc-light-border-color);
+	margin: 5px;
+	border-radius: 6px;
+	position: relative;
+}
+
+.err {
+	background: no-repeat scroll 10px center var(--vrc-white-bg-color) !important;
+	border: 1px solid var(--vrc-red-color) !important;
+	border-radius: 5px;
+	color: var(--vrc-red-color);
+	font-weight: bold;
+	margin: 15px 0 20px;
+	padding: 20px !important;
+	width: 100%;
+}
+.warn {
+	background: no-repeat scroll 10px center var(--vrc-white-bg-color) !important;
+	border: 1px solid var(--vbvrco-orange-color) !important;
+	border-radius: 5px;
+	color: var(--vrc-orange-color);
+	font-weight: bold;
+	margin: 15px 0 20px;
+	padding: 20px !important;
+}
+.successmade {
+	background: no-repeat scroll 10px center var(--vrc-white-bg-color) !important;
+	border: 1px solid var(--vrc-green-color) !important;
+	border-radius: 5px;
+	color: var(--vrc-green-color);
+	font-weight: bold;
+	margin: 15px 0 20px;
+	padding: 20px !important;
+}
+.info {
+	background: no-repeat scroll 10px center var(--vrc-white-bg-color) !important;
+	border: 1px solid var(--vrc-blue-color) !important;
+	border-radius: 5px;
+	color: var(--vrc-blue-color);
+	font-weight: bold;
+	margin: 15px 0 20px;
+	padding: 20px !important;
+}
+
+/* Start: Toast Message bottom-center positioned */
+.vrc-toast-message {
+	visibility: hidden;
+	min-width: 250px;
+	background-color: var(--vrc-text-color);
+	color: var(--vrc-contrast-text-color);
+	text-align: center;
+	border-radius: 4px;
+	padding: 16px;
+	position: fixed;
+	z-index: 99999;
+	left: 50%;
+	bottom: 30px;
+	transform: translate(-50%, 0);
+}
+.vrc-toast-message.vrc-toast-message-presented {
+	visibility: visible;
+	-webkit-animation: toastfadein 0.5s;
+	animation: toastfadein 0.5s;
+}
+.vrc-toast-message.vrc-toast-message-dimissed {
+	visibility: hidden;
+	-webkit-animation: toastfadeout 0.5s;
+	animation: toastfadeout 0.5s;
+}
+@-webkit-keyframes toastfadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+}
+@keyframes toastfadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+}
+@-webkit-keyframes toastfadeout {
+	from {bottom: 30px; opacity: 1; visibility: visible;}
+	to {bottom: 0; opacity: 0; visibility: hidden;}
+}
+@keyframes toastfadeout {
+	from {bottom: 30px; opacity: 1; visibility: visible;}
+	to {bottom: 0; opacity: 0; visibility: hidden;}
+}
+/* End: Toast Message bottom-center positioned */
+
+/* New style Calendar UI */
+.ui-datepicker.ui-widget-content {
+    background: var(--vrc-white-bg-color);
+    padding: 0;
+    border: 0;
+    width: 19em;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.ui-datepicker.ui-widget > .ui-datepicker-header {
+    font-weight: bold;
+    border: 0;
+    padding: .4em 3px !important;
+	background: transparent;
+}
+.ui-datepicker.ui-widget table {
+    width: 95%;
+    margin: 0 auto .4em;
+	border-collapse: initial;
+	border-spacing: 2px;
+}
+.ui-datepicker.ui-widget td {
+	border: 1px solid var(--vrc-light-border-color);
+	height: 35px;
+	width: 35px;
+}
+.ui-datepicker.ui-widget td span, .ui-datepicker.ui-widget td a {
+	padding: .2em;
+	height: 35px;
+	line-height: 35px !important;
+	display: block;
+}
+.ui-widget-header .ui-state-hover {
+	border: 1px solid var(--vrc-dark-grey-bg-color-hover);
+	background: var(--vrc-dark-grey-bg-color-hover);
+}
+.ui-datepicker.ui-widget-content .ui-state-disabled, .ui-datepicker.ui-widget-content .ui-state-disabled, .ui-datepicker .ui-widget-header .ui-state-disabled {
+    opacity: .55;
+}
+.ui-datepicker.ui-widget-content .ui-datepicker-prev, .ui-datepicker.ui-widget-content .ui-datepicker-next {
+    top: 6px;
+}
+.ui-datepicker.ui-widget-content .ui-datepicker-prev {
+    left: 6px;
+}
+.ui-datepicker.ui-widget-content .ui-datepicker-next {
+    right: 6px;
+}
+.ui-datepicker th {
+    font-weight: bold;
+    font-size: 14px;
+}
+.ui-datepicker.ui-widget-content .ui-state-default, .ui-datepicker.ui-widget-content .ui-state-default, .ui-datepicker.ui-widget-header .ui-state-default {
+    border: 0;
+    background: transparent;
+    font-weight: normal;
+    text-align: center;
+    color: var(--vrc-dark-grey-bg-color-hover);
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+	.vrcsearchview .vrc-searchf-section-locations {
+		max-width: inherit;
+		width: 100%;
+	}
+	.vrcsearchview .vrcsfentrycont > div select {
+		width: 100%;
+	}
+	.vrcsearchview .vrc-searchf-section-datetimes {
+		width: 100%;
+	}
+	.vrcsearchview .vrc-searchf-section-datetimes .vrcsfentrycont .vrc-sf-time-container {
+		display: flex;
+	}
+	.vrcsearchview .vrc-searchf-section-datetimes .vrcsfentrycont .vrc-sf-time-container #vrccomselph,
+	.vrcsearchview .vrc-searchf-section-datetimes .vrcsfentrycont .vrc-sf-time-container #vrccomselpm,
+	.vrcsearchview .vrc-searchf-section-datetimes .vrcsfentrycont .vrc-sf-time-container #vrccomseldh,
+	.vrcsearchview .vrc-searchf-section-datetimes .vrcsfentrycont .vrc-sf-time-container #vrccomseldm {
+		flex: 1;
+	}
+	.vrcsearchview .vrc-searchf-section-categories {
+		width: 100%;
+		margin-right: 0;
+	}
+	.vrcsearchview .vrc-searchf-section-sbmt {
+		margin-left: 0;
+		width: 100%;
+	}
+	.vrcsearchview .vrc-searchf-section-sbmt .vrcsfentrycont {
+		margin-top: 0 !important;
+	}
+	.vrcsearchview .vrc-search-btn {
+		width: 100%;
+	}
+	.vrcdivsearch .vrc-searchf-section-locations {
+		max-width: 100%;
+		width: 100%;
+	}
+	.vrcdivsearch .vrc-searchf-section-locations .vrcsfentryselect {
+		width: 100%;
+	}
+	.vrcdivsearch .vrcsfentryselect select {
+		width: 100%;
+	}
+	.vrcdivsearch .vrc-searchf-section-datetimes {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.vrcdivsearch .vrcsfentrycont > .vrcsfentrytime {
+		width: auto;
+	}
+	.vrcdivsearch .vrc-searchf-section-datetimes .vrcsfentrycont .vrcsfentrylabsel {
+		flex: 1;
+	}
+	.vrcdivsearch .vrc-searchf-section-datetimes .vrcsfentrycont .vrcsfentrydate {
+		width: 100%;
+		display: flex;
+		box-sizing: border-box;
+	}
+	.vrcdivsearch .vrc-searchf-section-datetimes .vrc-sf-time-container {
+		width: 100%;
+		display: flex;
+	}
+	.vrcdivsearch .vrc-searchf-section-sbmt {
+		margin-left: 0;
+		width: 100%;
+	}
+	.vrcdivsearch .vrc-searchf-section-sbmt .btn {
+		width: 100%;
+	}
+	.vrcsfentrycont #vrccomselph select, .vrcsfentrycont #vrccomselpm select, .vrcsfentrycont #vrccomseldh select, .vrcsfentrycont #vrccomseldm select {
+		width: 100%;
+	}
+	.vrcdivsearch .vrcsfentrycont .vrcsfentrysubmit {
+		width: 100%;
+	}
+	.vrcdivsearch .vrcsfentrycont .vrcsfentrysubmit .vrc-search-btn {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.vrc-oconfirm-summary-car-row {
+		flex-wrap: wrap;
+	}
+	.vrc-oconfirm-summary-total-head, .vrc-oconfirm-summary-car-row .vrc-oconfirm-summary-car-head-cell-responsive {
+		display: block;
+		text-transform: inherit;
+	}
+	.vrc-oconfirm-summary-car-head, .vrc-oconfirm-summary-total-head {
+		display: none;
+	}
+	.vrc-oconfirm-summary-car-wrapper > div > div, .vrc-oconfirm-summary-total-wrapper > div > div, .vrc-oconfirm-summary-total-wrapper-notaxes .vrc-oconfirm-summary-car-cell-descr {
+		width: 33%;
+	}
+	.vrc-oconfirm-summary-car-wrapper .vrc-oconfirm-summary-car-cell-descr {
+		background: var(--vrc-light-grey-bg-color);
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.vrc-oconfirm-summary-car-cell-net, .vrc-oconfirm-summary-car-cell-days, .vrc-oconfirm-summary-car-cell-tax, .vrc-oconfirm-summary-car-cell-tot {
+		text-align: left;
+	}
+	.vrc-oconfirm-summary-option-row {
+		border-bottom: 1px solid var(--vrc-light-border-color);
+	}
+	.vrc-oconfirm-summary-option-row .vrc-oconfirm-summary-car-cell-days, .vrc-oconfirm-summary-fee-row .vrc-oconfirm-summary-car-cell-days {
+		display: none;
+	}
+	.loginregistercont > div {
+		flex-basis: 100%;
+	}
+}
+@media screen and (max-width: 860px) {
+	.vrc-showprc-container > div {
+		flex-basis: 100%;
+	}
+	.vrc-showprc-right.car_img_box {
+		text-align: center;
+	}
+	.vrc-showprc-container .vrc-showprc-left {
+		margin-right: 0;
+		margin-top: 20px;
+	}
+	.vrcinfocarcontainer > .vrc-summary-car-img {
+		flex-basis: 230px;
+		flex-grow: 0;
+	}
+	.vrc-docsupload-wrap > div  {
+		flex-basis: 100%;
+	}
+	.vrc-oconfirm-middlep > div {
+		flex-basis: 100%;
+	}
+}
+@media screen and (max-width: 767px) {	
+	.table-responsive {
+	    width: 100%;
+	    margin-bottom: 15px;
+	    overflow-y: hidden;
+	    -ms-overflow-style: -ms-autohiding-scrollbar;
+	    border: 1px solid var(--vrc-border-color);
+	}
+	.vrc-availability-month-name, .vrc-availability-month-day {
+		white-space: nowrap;
+		padding: 8px;
+		line-height: 1.42857143;
+		vertical-align: top;
+		border-top: 1px solid var(--vrc-border-color);
+	}
+	.vrc-availability-car-details-first {
+	    width: 100%;
+	    border-right: 0;
+	    border-bottom: 1px solid var(--vrc-border-color);
+	}
+	.vrc-availability-car-container {
+	    border: 1px solid var(--vrc-border-color);
+	}
+	.vrc-availability-car-details-last {
+	    left: 0;
+	    width: 100%;
+	    border: 0;
+	}
+	.vrc-availability-car-details-last-inner {
+	    margin: 15px auto 20px;
+	}
+	.vrcdivsearch .vrclocationsbox {
+		flex-basis: 100%;
+		margin-left: 0;
+	}
+	.vrccustomfields .vrcdivcustomfield {
+		flex-basis: 100%;
+	}
+	.vrc-orders-list-table .vrc-orders-list-table-head-row, .vrc-orders-list-table-body .vrc-orders-list-table-row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.vrc-orders-list-table .vrc-orders-list-table-head-row {
+		display: none;
+	}
+	.vrc-orders-list-table-body .vrc-orders-list-table-row .vrc-orders-list-table-cell-lbl {
+		display: block;
+		font-weight: bold;
+	}
+	.vrc-orders-list-table-body .vrc-orders-list-table-cell {
+		margin-bottom: 6px;
+		flex-basis: 100%;
+	}
+	.vrc-orders-list-table-body .vrc-orders-list-table-row .vrc-orders-list-table-cell:last-child {
+		text-align: left;
+	}
+	.vrc-orders-list-table .vrc-orders-list-table-cell-bstatus {
+		flex-basis: 26px;
+		font-size: 20px;
+	}
+	.vrc-orders-list-table .vrc-orders-list-table-cell-bstatus + .vrc-orders-list-table-cell {
+		flex: 1;
+		text-align: right;
+	}
+}
+@media screen and (max-width : 660px) {
+	.vrc-cdetails-cinfo .vrc-cdetails-img {
+ 		flex-basis: auto;
+ 	}
+ 	.vrc-searchf-section-locations {
+ 		max-width: 100%;
+ 		margin-right: 0;
+ 	}
+ 	.vrc-searchf-section-locations .vrcsfentrycont {
+ 		width: 100%;
+		flex-basis: 100%;
+ 	}
+	 .vrc-searchf-section-locations .vrcsfentrycont:first-child, .vrc-searchf-section-datetimes .vrcsfentrycont:first-child {
+		margin-right: 0;
+		flex-basis: 100%;
+	}
+ 	.vrc-searchf-section-locations .vrcsfentrycont select {
+ 		width: 100%;
+ 	}
+ 	.vrc-searchf-section-datetimes {
+ 		width: 100%;
+ 	}
+ 	.vrcdivsearch .vrc-searchf-section-datetimes .vrcsfentrycont .vrcsfentrylabsel {
+ 		flex: 1;
+		margin-right: 0;
+ 	}
+ 	.vrcdivsearch .vrc-searchf-section-datetimes .vrcsfentrycont .vrcsfentrytime {
+		flex-basis: 100%;
+ 		margin-right: 0;
+ 	}
+ 	.vrcdivsearch .vrc-searchf-section-sbmt {
+ 		margin-left: 0;
+ 		width: 100%;
+ 	}
+ 	.vrcdivsearch .vrc-searchf-section-sbmt input {
+ 		width: 100%;
+ 	}
+	.car_result .vrc-car-result-left {
+		width: 100%;
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.vrc-cdetails-cinfo .vrc-cdetails-infocar {
+		padding: 10px 0px;
+	}
+	.car_result .vrc-car-result-right {
+		width: 100%;
+	}
+	.car_result .vrc-car-result-rightinner {
+		width: 100%;
+		left: auto;
+	}
+	.car_result .vrc-car-result-inner {
+		width: 96%;
+		padding: 0 20px;
+		left: auto;
+		min-height: inherit !important;
+	}
+	.car_result .vrc-car-result-rightinner-deep {
+		right: auto;
+	}
+	.car_result .vrc-car-lastblock {
+		width: 100%;
+		left: auto;
+		border-top: 1px solid var(--vrc-border-color);
+		border-left: 0;
+	}
+	.car_result .vrc-car-lastblock .vrcstartfrom {
+		margin-top: 0;
+	}
+	.car_result > .vrc-car-characteristics {
+		text-align: left;
+	}
+	.vrc-promotion-bottom-block {
+		width: 91.7%;
+	}
+	.vrc-car-characteristics, .vrc-car-result-characteristics {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.vrc-car-lastblock {
+		text-align: center;
+	}
+	.vrc-showprc-left {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.vrc-tableopt-td-name {
+		width: auto;
+	}
+	.vrcvordudata-cnt > div {
+		flex: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal {
+		text-align: left;
+	}
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-datetimes {
+		flex-wrap: wrap;
+	}
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-datetimes .vrcsfentrycont {
+		margin-right: 0 !important;
+		display: flex;
+	}
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-datetimes .vrcsfentrylabsel {
+		flex: 1;
+	}
+	.vrc-searchmod-wrap-horizontal > form .vrc-searchmod-section-pickup {
+		width: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrcsfentrycont {
+		margin: 5px 10px 5px 0;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrc-searchmod-section-pickup .vrcsfentrycont {
+		flex: 1;
+	}
+	.vrc-searchmod-wrap-horizontal form .vrcsfentrycont select {
+		width: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal .vrc-searchmod-section-sbmt {
+		width: 100%;
+	}
+	.vrc-searchmod-wrap-horizontal .vrcsfentrysubmit .vrcsearch {
+		width: 100% !important;
+	}    
+	.vrcdivsearch {
+		flex-wrap: wrap;
+	}
+	.vrcdivsearch .vrclocationsbox {
+		flex-basis: 100%;
+		margin-top: 15px;
+	}
+	.vrclocationsmapdiv {
+		width: 100%;
+	}
+	.vrc-searchsuggestions-list .vrc-searchsuggestions-solution {
+		flex-basis: 100%;
+	}
+	.vrcinfocarcontainer {
+		justify-content: center;
+	}
+	.vrcinfocarcontainer > div {
+		flex-basis: 100%;
+	}
+	.vrcinfocarcontainer > .vrcrentforlocs {
+		order: 1;
+	}
+	.vrcinfocarcontainer > .vrc-summary-car-img {
+		margin-bottom: 10px;
+	}
+	.vrc-order-details-top-order > div {
+		flex-basis: 100%;
+	}
+	.vrc-order-details-top-car .vrc-order-details-summary {
+		flex-basis: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.vrc-order-details-top-car .vrc-order-details-car-info {
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.vrcdialog-reqinfo textarea {
+		width: 100%;
+	}
+	.vrc-oconfirm-summary-total-wrapper > div > div {
+		padding: 8px 10px;
+	}
+	.vrc-oconfirm-summary-total-row .vrc-oconfirm-summary-car-cell-descr {
+		margin-bottom: 5px;	
+	}
+	.vrc-oconfirm-summary-total-row .vrc-oconfirm-summary-car-head-cell {
+		display: block;
+		width: 100%;
+	}
+	.vrc-oconfirm-summary-total-row .vrc-oconfirm-summary-car-cell-days {
+		display: none;
+	}
+}
+@media screen and (max-width : 580px) {
+	.vrc-tableopt-td-name {
+		width: auto;
+	}
+	.vrcstepsbarcont .vrc-stepbar {
+		flex-wrap: wrap;
+	}
+	.vrcstepsbarcont .vrc-stepbar > li {
+		flex-basis: 100%;
+		text-align: left;
+		border-bottom: 1px solid var(--vrc-border-color);
+	}
+	.vrcstepsbarcont .vrc-stepbar > li:last-child {
+		border-bottom: 0;
+	}
+	.vrc-showprc-prices-inner .vrc-showprc-price-row {
+		flex-wrap: wrap;
+	}
+	.vrc-showprc-prices-inner .vrc-showprc-price-row-cell-first {
+		flex-basis: 100%;
+	}
+	.vrc-showprc-prices-inner .vrc-showprc-price-row-cell-last {
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.vrc-showprc-prices-inner .vrc-showprc-priceinfo {
+		flex-wrap: wrap;
+	}
+	.vrc-showprc-prices-inner .vrc-showprc-priceinfo .vrc-showprc-pricename {
+		display: block;
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.vrc-showprc-prices-inner .vrc-showprc-priceinfo .vrc-showprc-pricecost, .vrc-showprc-prices-inner .vrc-showprc-price-row-cell-last {
+		flex-basis: 100%;
+		text-align: center;
+		margin-top: 5px;
+	}
+	.vrc-itinerary-summary .vrc-itinerary-pickup {
+		border-right: 0;
+		border-bottom: 1px solid var(--vrc-border-color);
+	}
+	.vrc-showprc-options-wrap .vrc-showprc-option-row {
+		flex-wrap: wrap;
+	}
+	.vrc-showprc-option-row .vrc-showprc-option-img {
+		flex-basis: 100%;
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+	.vrc-showprc-option-row .vrc-showprc-option-name-descr {
+		margin-right: 0;
+	}
+	.vrc-showprc-option-row .vrc-showprc-option-cell-price {
+		flex-basis: 100%;
+		justify-content: center;
+		margin-top: 15px;
+	}
+	.vrc-showprc-option-row .vrc-showprc-option-cell-info {
+		text-align: center;
+	}
+	.vrcinfocarcontainer .vrc-summary-car-img {
+		flex-basis: 100%;
+		flex-grow: 0;
+		max-width: 100%;
+		text-align: center;
+	}
+	.vrcinfocarcontainer .vrc-summary-car-img img {
+		max-width: 400px;
+		float: none;
+	}
+	.vrc-oconfirm-paym-block ul li {
+		flex-basis: 100%;
+	}
+	.vrc-oconfirm-middlep input[type="text"] {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.vrcentercoupon .btn, .vrc-enterpin-top .vrc-pincode-sbmt {
+		width: 100%;
+		margin: 0;
+	}
+	.vrc-oconfirm-paym-block .vrc-payment-image img {
+		display: none;
+	}
+	.vrclegenda {
+		display: block;
+	}
+	.vrc-oconfirm-footer {
+        justify-content: center;
+    }
+    .vrc-oconfirm-footer .vrc-save-order-block {
+        margin: 10px;
+    }
+	.car_buttons_box {
+		text-align: center;
+	}
+	.car_buttons_box .booknow, .car_buttons_box .vrc-goback-block {
+		float: none;
+		width: 100%;
+	}
+	.vrc-search-results-block.vrc-search-results-block-grid {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media only screen and (max-width : 550px) {
+	.vrc-availability-car-details-first {
+		width: 100%;
+		border: 0;
+	}
+	.vrc-availability-car-details-left {
+	    width: 100%;
+	    margin: 0;
+	}
+	.vrc-availability-car-details-right {
+	    width: 100%;
+	    padding: 10px 15px;
+	}
+	.vrc-availability-car-details-last {
+	    width: 100%;
+	    border: 0;
+	        border-top-color: currentcolor;
+	        border-top-style: none;
+	        border-top-width: 0px;
+	    border-top: 1px solid var(--vrc-border-color);
+	}
+	.vrc-availability-car-container {
+	    border: 1px solid var(--vrc-border-color);
+	}
+	.vrc-availability-car-details-last-inner {
+	    margin: 10px auto 20px;
+	}
+	.vrc-availability-car-monthcal {
+	    margin-bottom: 0 !important;
+	    border: 0 !important;
+	}
+	.vrc-oconfirm-summary-car-wrapper > div > div, .vrc-oconfirm-summary-total-wrapper > div > div {
+		width: 100%;
+		border-bottom: 1px solid var(--vrc-light-border-color);
+	}
+	.vrc-oconfirm-summary-car-wrapper > div > div:last-child, .vrc-oconfirm-summary-total-wrapper > div > div:last-child {
+		border: 0;
+	}
+	.vrc-oconfirm-summary-option-row {
+		border: 0;
+	}	
+	.vrc-order-details-car-photo img {
+		max-width: 100%;
+	}
+	.ui-datepicker.ui-widget-content {
+		max-width: 250px;
+	}
+}
+@media screen and (max-width : 505px) {
+	.vrccaldivcont {
+		width: 100%;
+	}
+	.vrcdivsearchmodule {
+		padding: 15px 0;
+	}
+	.vrcinfocarcontainer .vrc-summary-car-img img {
+		width: 100%;
+	}
+}
+@media screen and (max-width : 450px) {
+	.vrcdivsearch .vrc-searchf-section-datetimes .vrcsfentrycont .vrcsfentrylabsel {
+		min-width: inherit;
+	}
+	.vrcdivsearch .vrc-searchf-section-datetimes .vrcsfentrycont .vrcsfentrytime {
+		width: auto;
+	}
+}

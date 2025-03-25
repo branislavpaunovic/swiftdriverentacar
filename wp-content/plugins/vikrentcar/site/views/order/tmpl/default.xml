@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRENTCAR_ORDER_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRENTCAR_ORDER_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Order Details" >
+		<message><![CDATA[VikRentCar Order Details]]></message>
+	</view>
+	<state>
+		<name>Order Details</name>
+		<description>VikRentCar Order Details</description>
+	</state>
+</metadata>

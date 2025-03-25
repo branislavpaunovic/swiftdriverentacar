@@ -1,0 +1,12 @@
+[15-Mar-2025 08:02:05 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Widget" not found in /home/swiftdri/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[17-Mar-2025 15:59:02 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Widget" not found in /home/swiftdri/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17
+[18-Mar-2025 00:43:13 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Widget" not found in /home/swiftdri/public_html/wp-includes/widgets/class-wp-widget-block.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/swiftdri/public_html/wp-includes/widgets/class-wp-widget-block.php on line 17

@@ -1,0 +1,24 @@
+.vrc-curconv-wrap {
+	max-width: 400px;
+}
+.vrccurconvcontainer {
+	display: flex;
+}
+.vrc_converting {
+	display: inline-block;
+	background: url('./images/converting.gif');
+	min-width: 50px;
+	min-height: 8px;
+}
+.vrccurconv-flag {
+	display: inline-block;
+	padding: 0 5px 0;
+}
+.vrccurconv-menu {
+	margin-left: auto;
+	overflow: hidden;
+	min-width: 100px;
+}
+#modcurconvsel {
+	width: auto !important;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRENTCAR_LOCATIONSLIST_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRENTCAR_LOCATIONSLIST_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Locations List" >
+		<message><![CDATA[VikRentCar Locations List]]></message>
+	</view>
+	<state>
+		<name>Locations List</name>
+		<description>VikRentCar Locations List</description>
+	</state>
+</metadata>
+

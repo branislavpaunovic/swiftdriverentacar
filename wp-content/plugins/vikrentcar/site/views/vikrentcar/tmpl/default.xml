@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRENTCAR_VIKRENTCAR_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRENTCAR_VIKRENTCAR_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Search" >
+		<message><![CDATA[VikRentCar Search Form]]></message>
+	</view>
+	<state>
+		<name>Search</name>
+		<description>VikRentCar Search Form</description>
+	</state>
+</metadata>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRENTCAR_AVAILABILITY_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRENTCAR_AVAILABILITY_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Cars Availability" >
+		<message><![CDATA[VikRentCar Cars Availability]]></message>
+	</view>
+	<state>
+		<name>Cars Availability</name>
+		<description>VikRentCar Cars Availability</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="car_ids" type="sql" default="0" label="COM_VIKRENTCAR_CARIDS_FIELD_SELECT_TITLE" description="COM_VIKRENTCAR_CARIDS_FIELD_SELECT_TITLE_DESC" query="SELECT id AS value, name AS title FROM #__vikrentcar_cars" key_field="value" value_field="title" multiple="multiple" />
+			<field name="showtype" type="list" default="2" label="COM_VIKRENTCAR_AVSHOWTYPE_FIELD_SELECT_TITLE">
+				<option value="1">COM_VIKRENTCAR_AVSHOWTYPE_NONE</option>
+				<option value="2">COM_VIKRENTCAR_AVSHOWTYPE_REMAINING</option>
+				<option value="3">COM_VIKRENTCAR_AVSHOWTYPE_BOOKED</option>
+			</field>
+			<field name="sortby" type="list" default="" label="COM_VIKRENTCAR_SORTBY_FIELD_SELECT_TITLE">
+				<option value="">COM_VIKRENTCAR_STARTFROM_PRICE</option>
+				<option value="name">COM_VIKRENTCAR_SORT_NAME</option>
+				<option value="id">COM_VIKRENTCAR_SORT_ID</option>
+			</field>
+			<field name="sorttype" type="list" default="asc" label="COM_VIKRENTCAR_SORTTYPE_FIELD_SELECT_TITLE">
+				<option value="asc">COM_VIKRENTCAR_SORT_ASC</option>
+				<option value="desc">COM_VIKRENTCAR_SORT_DESC</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

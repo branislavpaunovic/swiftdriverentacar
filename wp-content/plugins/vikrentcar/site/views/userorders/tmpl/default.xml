@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRENTCAR_USERORDERS_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRENTCAR_USERORDERS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="User Orders" >
+		<message><![CDATA[VikRentCar User Orders]]></message>
+	</view>
+	<state>
+		<name>User Orders</name>
+		<description>VikRentCar User Orders</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="searchorder" type="radio" default="1" label="COM_VIKRENTCAR_USERORDERS_FIELD_SEARCHORDER" description="COM_VIKRENTCAR_USERORDERS_FIELD_SEARCHORDER_DESC" class="btn-group btn-group-yesno" layout="joomla.form.field.radio.switcher">
+				<option value="0">COM_VIKRENTCAR_USERORDERS_FIELD_SEARCHORDER_NO</option>
+				<option value="1">COM_VIKRENTCAR_USERORDERS_FIELD_SEARCHORDER_YES</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>
